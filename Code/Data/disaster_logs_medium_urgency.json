@@ -1,0 +1,1320 @@
+{
+  "network_name": "skAiNet",
+  "urgency_level": "MEDIUM",
+  "total_messages": 101,
+  "logs": [
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "2341",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Sarah",
+      "message": "Food is running out, need aid desperately for 12 people.",
+      "log_id": 4,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "6789",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Ravi",
+      "message": "Food supplies critically low for 20 people.",
+      "log_id": 15,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 3,
+      "current_node": 4,
+      "message_id": "3344",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Rohan",
+      "message": "Need blankets and temporary shelter.",
+      "log_id": 17,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 1,
+      "current_node": 2,
+      "message_id": "1122",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Emily",
+      "message": "We need food, especially for the children.",
+      "log_id": 26,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 2,
+      "current_node": 1,
+      "message_id": "5566",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "David",
+      "message": "Shelter completely destroyed, need temporary housing.",
+      "log_id": 28,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 3,
+      "current_node": 4,
+      "message_id": "7788",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Pooja",
+      "message": "Checking in, everyone is safe here, limited power.",
+      "log_id": 29,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 2,
+      "current_node": 3,
+      "message_id": "4567",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Emily",
+      "message": "No clean water for 2 days, desperate.",
+      "log_id": 34,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "2345",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Priya",
+      "message": "Running out of food supplies, need immediate relief.",
+      "log_id": 35,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 1,
+      "message_id": "9277",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Amit",
+      "message": "Need food supplies for children.",
+      "log_id": 45,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 2,
+      "current_node": 4,
+      "message_id": "1234",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Emily",
+      "message": "Need water and food supplies.",
+      "log_id": 52,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "2023",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Liam",
+      "message": "No power, need battery packs and shelter.",
+      "log_id": 55,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 3,
+      "message_id": "6006",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Chloe",
+      "message": "Need medicine for chronic conditions.",
+      "log_id": 60,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "3377",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Pooja",
+      "message": "No water or food for 2 days. Send supplies.",
+      "log_id": 65,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 2,
+      "current_node": 3,
+      "message_id": "8921",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Anya",
+      "message": "Power out for 12 hours. Urgent need for communication devices.",
+      "log_id": 67,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 2,
+      "current_node": 4,
+      "message_id": "1234",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Priya",
+      "message": "No clean water, running low on food supplies.",
+      "log_id": 72,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 1,
+      "current_node": 4,
+      "message_id": "3344",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "John",
+      "message": "Need urgent medical supplies for elderly.",
+      "log_id": 77,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "3456",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Amit",
+      "message": "No clean water for 12 hours, children are thirsty.",
+      "log_id": 85,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 1,
+      "current_node": 2,
+      "message_id": "7890",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Emily",
+      "message": "Running low on food and medicine.",
+      "log_id": 86,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 3,
+      "current_node": 4,
+      "message_id": "2109",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Maya",
+      "message": "Power out, need warm shelter and blankets.",
+      "log_id": 87,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 5,
+      "current_node": 1,
+      "message_id": "6543",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "David",
+      "message": "Need food supplies for 10 people.",
+      "log_id": 88,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 2,
+      "current_node": 5,
+      "message_id": "1103",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Priya",
+      "message": "We need clean water and food. No supplies for 2 days.",
+      "log_id": 93,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 1,
+      "current_node": 4,
+      "message_id": "1092",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rajesh",
+      "message": "We need water and food urgently for 5 people.",
+      "log_id": 102,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "9988",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Deepa",
+      "message": "No power, and limited food supplies for the next 2 days.",
+      "log_id": 110,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "9012",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Sarah",
+      "message": "No water or food for 2 days. Send supplies.",
+      "log_id": 114,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 1,
+      "current_node": 2,
+      "message_id": "7890",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Meena",
+      "message": "Power out, no comms. Need generator and shelter.",
+      "log_id": 116,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "9876",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Emily",
+      "message": "Need food and blankets.",
+      "log_id": 124,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 1,
+      "current_node": 4,
+      "message_id": "5432",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "David",
+      "message": "Running low on medicines.",
+      "log_id": 127,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 1,
+      "message_id": "9001",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Chloe",
+      "message": "Power out, no comms.",
+      "log_id": 130,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "1234",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Emily",
+      "message": "No clean water, urgently need supplies.",
+      "log_id": 132,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 1,
+      "current_node": 2,
+      "message_id": "7890",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Priya",
+      "message": "We need food and shelter for 15 people.",
+      "log_id": 136,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 2,
+      "current_node": 1,
+      "message_id": "3344",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Lisa",
+      "message": "Running out of medicine for elderly here.",
+      "log_id": 138,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 3,
+      "current_node": 4,
+      "message_id": "7788",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Maria",
+      "message": "Power is out, need lights and communication.",
+      "log_id": 140,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 5,
+      "current_node": 1,
+      "message_id": "6543",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Raj",
+      "message": "Running low on basic medicines, help needed.",
+      "log_id": 147,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 2,
+      "current_node": 3,
+      "message_id": "1122",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "John",
+      "message": "Power out for hours, need supplies.",
+      "log_id": 149,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 5,
+      "current_node": 4,
+      "message_id": "3456",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Amit",
+      "message": "No clean water for 2 days.",
+      "log_id": 155,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 1,
+      "current_node": 2,
+      "message_id": "7890",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Emily",
+      "message": "Running low on food supplies.",
+      "log_id": 156,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "2345",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Rohan",
+      "message": "Need essential medicines, please assist.",
+      "log_id": 157,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 2,
+      "current_node": 4,
+      "message_id": "6789",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Clara",
+      "message": "Seeking safe shelter from the rain.",
+      "log_id": 158,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "9103",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Priya",
+      "message": "We need clean water and food supplies immediately.",
+      "log_id": 163,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 1,
+      "message_id": "3579",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Aisha",
+      "message": "Requesting basic medicines for the elderly and children.",
+      "log_id": 165,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 5,
+      "current_node": 4,
+      "message_id": "5831",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Emily",
+      "message": "No electricity, need blankets and warm clothing.",
+      "log_id": 168,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 1,
+      "message_id": "1987",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Sarah",
+      "message": "Running out of food supplies.",
+      "log_id": 172,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 5,
+      "current_node": 4,
+      "message_id": "2045",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Amit",
+      "message": "No clean water, very thirsty here.",
+      "log_id": 175,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 1,
+      "message_id": "1234",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "John",
+      "message": "Food supplies critical, only one meal left.",
+      "log_id": 195,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 3,
+      "message_id": "1032",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Liam",
+      "message": "No power for communication, batteries low.",
+      "log_id": 200,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "1104",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Sarah",
+      "message": "No clean water or food, urgent supplies needed.",
+      "log_id": 202,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 3,
+      "current_node": 4,
+      "message_id": "2001",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Rina",
+      "message": "Power lines down, no way to charge devices.",
+      "log_id": 207,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 3,
+      "current_node": 5,
+      "message_id": "1530",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "John",
+      "message": "Requesting clean drinking water and food supplies.",
+      "log_id": 219,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 5,
+      "current_node": 1,
+      "message_id": "1098",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Priya",
+      "message": "Need clean water and food supplies.",
+      "log_id": 222,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 1,
+      "current_node": 4,
+      "message_id": "7789",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Rohan",
+      "message": "Running low on medical supplies.",
+      "log_id": 227,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 5,
+      "current_node": 4,
+      "message_id": "9118",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "John",
+      "message": "Running out of food and basic medicine. Please send aid.",
+      "log_id": 235,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "1932",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Sameer",
+      "message": "Power out, need communication device charging.",
+      "log_id": 240,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 2,
+      "current_node": 4,
+      "message_id": "5678",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Sarah",
+      "message": "No power, requesting shelter supplies.",
+      "log_id": 244,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 3,
+      "current_node": 2,
+      "message_id": "3456",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Maria",
+      "message": "Medicine for my child is running low, urgent!",
+      "log_id": 267,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 3,
+      "message_id": "8901",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Krish",
+      "message": "Power out for hours, phones dying, need power source.",
+      "log_id": 270,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "2900",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Sarah",
+      "message": "No water or food for 24 hours. Many children here.",
+      "log_id": 275,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 2,
+      "current_node": 3,
+      "message_id": "3561",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "David",
+      "message": "Running low on essential medicines. Any updates?",
+      "log_id": 277,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 5,
+      "current_node": 4,
+      "message_id": "9105",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Emily",
+      "message": "Power out, communication is difficult. Need power source.",
+      "log_id": 278,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 3,
+      "message_id": "3321",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Anjali",
+      "message": "No clean water for 2 days. Supplies low!",
+      "log_id": 285,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 2,
+      "current_node": 1,
+      "message_id": "9101",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Liam",
+      "message": "Elderly residents need medicine and food.",
+      "log_id": 286,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 3,
+      "current_node": 5,
+      "message_id": "6789",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Neha",
+      "message": "Power out, need blankets and temporary shelter.",
+      "log_id": 287,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 5,
+      "current_node": 4,
+      "message_id": "2456",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Chris",
+      "message": "Water purification tablets needed for community well.",
+      "log_id": 288,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 2,
+      "current_node": 1,
+      "message_id": "7654",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Aisha",
+      "message": "Shelter needed for 5 people.",
+      "log_id": 298,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 5,
+      "current_node": 3,
+      "message_id": "1122",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Mark",
+      "message": "Basic supplies running low.",
+      "log_id": 299,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 1,
+      "current_node": 4,
+      "message_id": "2105",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Priya",
+      "message": "No water or food for 2 days!",
+      "log_id": 302,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 2,
+      "current_node": 1,
+      "message_id": "9713",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Sarah",
+      "message": "Medicine supplies critically low.",
+      "log_id": 304,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 3,
+      "current_node": 2,
+      "message_id": "2118",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Sarah",
+      "message": "Food running low. Children are hungry.",
+      "log_id": 314,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 1,
+      "current_node": 2,
+      "message_id": "8011",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Rajesh",
+      "message": "Need medical kits for cuts and bruises.",
+      "log_id": 317,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "1256",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "David",
+      "message": "Shelter damaged, need tarpaulins or tents.",
+      "log_id": 319,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 2,
+      "current_node": 4,
+      "message_id": "1975",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "David",
+      "message": "No water for 24 hours, need supplies.",
+      "log_id": 322,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "2654",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Emily",
+      "message": "Food is running low, send aid.",
+      "log_id": 324,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 2,
+      "message_id": "1876",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Vikram",
+      "message": "Power is out, shelters are open, need generators.",
+      "log_id": 340,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 1,
+      "message_id": "3456",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Amit",
+      "message": "Need food and blankets for survivors here.",
+      "log_id": 355,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 2,
+      "current_node": 4,
+      "message_id": "0123",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Michael",
+      "message": "Generator failed. No power, limited light.",
+      "log_id": 359,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 1,
+      "message_id": "2109",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Priya",
+      "message": "Need food supplies, group of 5 adults, 3 children.",
+      "log_id": 362,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 2,
+      "current_node": 4,
+      "message_id": "1098",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Priya",
+      "message": "We need water and food supplies here. Many children.",
+      "log_id": 372,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "7890",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Amit",
+      "message": "No water or food for 24 hours.",
+      "log_id": 385,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 2,
+      "current_node": 1,
+      "message_id": "6789",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Fatima",
+      "message": "Running low on essential medicine for my elderly mother. Supply needed.",
+      "log_id": 396,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 5,
+      "current_node": 3,
+      "message_id": "2233",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Aisha",
+      "message": "We need clean water and food supplies for 15 people here.",
+      "log_id": 398,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 2,
+      "message_id": "6677",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Seema",
+      "message": "Family is accounted for. Any updates on road clearings?",
+      "log_id": 400,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 2,
+      "current_node": 3,
+      "message_id": "6012",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Sarah",
+      "message": "Need shelter, lost everything.",
+      "log_id": 406,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 3,
+      "current_node": 4,
+      "message_id": "8100",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "John",
+      "message": "Power is down, generator needed.",
+      "log_id": 408,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 1,
+      "current_node": 4,
+      "message_id": "2198",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rahul",
+      "message": "No water for 24 hours. Send help.",
+      "log_id": 412,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 3,
+      "current_node": 4,
+      "message_id": "7890",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Aisha",
+      "message": "Medicine for elderly person needed soon.",
+      "log_id": 417,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "0079",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Chris",
+      "message": "Need blankets and basic shelter materials.",
+      "log_id": 420,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 3,
+      "current_node": 5,
+      "message_id": "3456",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Priya",
+      "message": "No food or water for 2 days. Send supplies.",
+      "log_id": 423,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 5,
+      "current_node": 1,
+      "message_id": "5687",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Rohan",
+      "message": "Power out, communication failing, need charging.",
+      "log_id": 432,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 1,
+      "message_id": "8036",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Shanti",
+      "message": "Medicine for elderly and infants required.",
+      "log_id": 437,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 2,
+      "current_node": 4,
+      "message_id": "4973",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Pooja",
+      "message": "Need clean water and food supplies.",
+      "log_id": 440,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 2,
+      "current_node": 3,
+      "message_id": "1357",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "John",
+      "message": "Power is out, no shelter from rain.",
+      "log_id": 447,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 5,
+      "current_node": 4,
+      "message_id": "8001",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Priya",
+      "message": "Requesting food and clean water supplies.",
+      "log_id": 448,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 1,
+      "current_node": 2,
+      "message_id": "5647",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Arjun",
+      "message": "Power grid down, no communication, need generator.",
+      "log_id": 458,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "5678",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Priya",
+      "message": "Need water and food supplies!",
+      "log_id": 462,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "7890",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Anjali",
+      "message": "Medicines running low, urgent!",
+      "log_id": 465,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 3,
+      "current_node": 4,
+      "message_id": "3344",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Aisha",
+      "message": "No power, shelter damaged!",
+      "log_id": 467,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 3,
+      "message_id": "9900",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Arjun",
+      "message": "Need tarpaulins for shelter!",
+      "log_id": 470,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "3345",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Aisha",
+      "message": "Need food, children are hungry.",
+      "log_id": 475,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 4,
+      "current_node": 1,
+      "message_id": "7351",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Emily",
+      "message": "Need clean water and food supplies, 5 people.",
+      "log_id": 485,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 5,
+      "current_node": 1,
+      "message_id": "5678",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Priya",
+      "message": "No clean water or food here.",
+      "log_id": 492,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 3,
+      "current_node": 4,
+      "message_id": "5566",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Aisha",
+      "message": "Power out, need shelter supplies.",
+      "log_id": 498,
+      "urgency": "MEDIUM"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "9900",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Meena",
+      "message": "Seeking food and blankets.",
+      "log_id": 500,
+      "urgency": "MEDIUM"
+    }
+  ]
+}

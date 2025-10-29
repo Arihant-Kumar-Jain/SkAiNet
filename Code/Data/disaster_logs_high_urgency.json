@@ -1,0 +1,3920 @@
+{
+  "network_name": "skAiNet",
+  "urgency_level": "HIGH",
+  "total_messages": 301,
+  "logs": [
+    {
+      "source_node": 4,
+      "current_node": 1,
+      "message_id": "8723",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Priya",
+      "message": "Building collapsing! Trapped, many injured!",
+      "log_id": 1,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 5,
+      "message_id": "1098",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "John",
+      "message": "No clean water, supplies exhausted. Children thirsty.",
+      "log_id": 2,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "4567",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Ahmed",
+      "message": "Severe head injury, bleeding. Need medic NOW!",
+      "log_id": 3,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 5,
+      "message_id": "6123",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Emily",
+      "message": "Fire spreading rapidly, entire floor compromised!",
+      "log_id": 6,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 2,
+      "message_id": "9012",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Sanjay",
+      "message": "Elderly without critical medicine, power failure.",
+      "log_id": 7,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 1,
+      "message_id": "3456",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Liam",
+      "message": "Child critically ill, urgent medical evacuation needed!",
+      "log_id": 8,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 5,
+      "message_id": "5678",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Aisha",
+      "message": "Seeking safe shelter, exposed to heavy rain and wind.",
+      "log_id": 9,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 4,
+      "message_id": "1234",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Arjun",
+      "message": "Trapped under rubble, can hear voices!",
+      "log_id": 11,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "5678",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Priya",
+      "message": "No clean water, children dehydrated.",
+      "log_id": 12,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "2345",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Sarah",
+      "message": "Serious head injury, needs medical evac!",
+      "log_id": 14,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 2,
+      "message_id": "1122",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Emily",
+      "message": "Fire breaking out on ground floor!",
+      "log_id": 16,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 1,
+      "message_id": "7788",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Sameer",
+      "message": "Collapsed building, multiple injured, critical.",
+      "log_id": 19,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 3,
+      "message_id": "9900",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Aisha",
+      "message": "Medicine supply for elderly exhausted.",
+      "log_id": 20,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "8765",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rahul",
+      "message": "Fire spreading fast! Trapped on 3rd floor!",
+      "log_id": 21,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "1234",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Priya",
+      "message": "Building partially collapsed, 2 injured, bleeding!",
+      "log_id": 22,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 4,
+      "message_id": "9876",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Alex",
+      "message": "Critical injury, need medical evacuation immediately!",
+      "log_id": 23,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "5432",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Sarah",
+      "message": "Child trapped under debris, can hear cries!",
+      "log_id": 24,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "6789",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Mohan",
+      "message": "No clean water left, need supply drop urgently.",
+      "log_id": 25,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 3,
+      "message_id": "3344",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Rina",
+      "message": "Running out of essential medicines for elders.",
+      "log_id": 27,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "8765",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rahul",
+      "message": "Building collapsing, trapped!",
+      "log_id": 31,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "1234",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Sarah",
+      "message": "Major injury, bleeding heavily, need medic!",
+      "log_id": 32,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 4,
+      "message_id": "9876",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Amit",
+      "message": "Fire spreading rapidly, help needed!",
+      "log_id": 33,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 1,
+      "message_id": "6789",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "John",
+      "message": "Medicine stock empty, many sick.",
+      "log_id": 36,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 2,
+      "message_id": "3456",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Aisha",
+      "message": "Shelter compromised, need immediate tarps/tents.",
+      "log_id": 37,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 3,
+      "message_id": "5678",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Michael",
+      "message": "Child critically ill, urgent medical evacuation!",
+      "log_id": 40,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "8712",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Priya",
+      "message": "Building collapsing! Trapped!",
+      "log_id": 41,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "3490",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Rahul",
+      "message": "No water for 2 days, desperate.",
+      "log_id": 42,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 5,
+      "message_id": "1104",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "John",
+      "message": "Severe bleeding, need medic now!",
+      "log_id": 44,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 2,
+      "message_id": "5631",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Emily",
+      "message": "Fire spreading, help us!",
+      "log_id": 46,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 4,
+      "message_id": "2345",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Clara",
+      "message": "Urgent medicine for elderly.",
+      "log_id": 48,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 5,
+      "message_id": "4019",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rajesh",
+      "message": "Child critically injured here!",
+      "log_id": 49,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 3,
+      "message_id": "6780",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Olivia",
+      "message": "Seeking shelter, very cold.",
+      "log_id": 50,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "4567",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rohan",
+      "message": "Trapped, leg injury, critical!",
+      "log_id": 51,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "9876",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Amit",
+      "message": "Building collapsing, fire spreading!",
+      "log_id": 53,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 1,
+      "message_id": "8080",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Priyanka",
+      "message": "Child critically injured, bleeding heavily.",
+      "log_id": 56,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 3,
+      "message_id": "1111",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "David",
+      "message": "Seeking medical aid for elderly people.",
+      "log_id": 57,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 2,
+      "message_id": "7777",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Aisha",
+      "message": "Multiple people trapped, building unstable.",
+      "log_id": 58,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 4,
+      "message_id": "7823",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rahul",
+      "message": "My leg is trapped under rubble! Bleeding heavily!",
+      "log_id": 61,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "1298",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Sarah",
+      "message": "Fire spreading fast on the third floor! We're stuck!",
+      "log_id": 62,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "4501",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Akash",
+      "message": "Building collapsed, my child is injured and unconscious. Need help now!",
+      "log_id": 63,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "9032",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "David",
+      "message": "Trapped in basement, water rising. Urgent extraction needed!",
+      "log_id": 64,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 2,
+      "message_id": "6150",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Michael",
+      "message": "Need medical help, basic first aid, and shelter.",
+      "log_id": 66,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 4,
+      "message_id": "2004",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "John",
+      "message": "Requesting blankets and tents. Many children are cold.",
+      "log_id": 68,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "5678",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Ravi",
+      "message": "Trapped under debris, leg bleeding heavily!",
+      "log_id": 71,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "9012",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Akash",
+      "message": "Fire spreading quickly, need immediate evacuation!",
+      "log_id": 73,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "3456",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Sarah",
+      "message": "Seeking shelter, heavy rain starting.",
+      "log_id": 74,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 2,
+      "message_id": "1122",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Meena",
+      "message": "Building collapsed, people injured, critical help needed now!",
+      "log_id": 76,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 5,
+      "message_id": "5566",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Pooja",
+      "message": "Children trapped, cannot move, breathing difficult!",
+      "log_id": 78,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 3,
+      "message_id": "9900",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Liam",
+      "message": "Power outage for days, need generator for medical equipment.",
+      "log_id": 80,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "8723",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rohan",
+      "message": "Fire spreading fast, trapped upstairs!",
+      "log_id": 81,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 4,
+      "message_id": "1234",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Priya",
+      "message": "Building collapsed, injured and bleeding!",
+      "log_id": 82,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "5678",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "John",
+      "message": "Multiple trapped under debris, critical injuries.",
+      "log_id": 83,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 3,
+      "message_id": "9012",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Sarah",
+      "message": "Heavy bleeding, need urgent medical support!",
+      "log_id": 84,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "8721",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rahul",
+      "message": "Building collapsed, multiple injured! Urgent medical help needed.",
+      "log_id": 91,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 1,
+      "message_id": "3490",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Sarah",
+      "message": "Trapped under debris, leg bleeding heavily. Cannot move!",
+      "log_id": 92,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "6054",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Omar",
+      "message": "Fire spreading rapidly near sector 7. Children are here!",
+      "log_id": 94,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 4,
+      "message_id": "9128",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Deepa",
+      "message": "Out of essential medicines for elders. Request urgent supply drop.",
+      "log_id": 95,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "7732",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "David",
+      "message": "Need blankets and warm shelter. Temperatures dropping fast.",
+      "log_id": 96,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "5678",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "John",
+      "message": "Child having severe respiratory issues, needs oxygen. Critical!",
+      "log_id": 98,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 2,
+      "message_id": "4321",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Maria",
+      "message": "Power grid completely down here. Need generators for hospital.",
+      "log_id": 99,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "8723",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Priya",
+      "message": "My leg is bleeding badly after the collapse. Need help now!",
+      "log_id": 101,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 3,
+      "message_id": "9110",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Amit",
+      "message": "Fire on the second floor! Trapped with my family.",
+      "log_id": 104,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 1,
+      "message_id": "3210",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "David",
+      "message": "Running low on essential medicine. Elderly person here.",
+      "log_id": 105,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 5,
+      "message_id": "5678",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Meena",
+      "message": "My child has a critical head injury. Please send a medical team!",
+      "log_id": 106,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 2,
+      "message_id": "7890",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Omar",
+      "message": "Shelter needed, our house is destroyed. Many families exposed.",
+      "log_id": 107,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 4,
+      "message_id": "1122",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Jessica",
+      "message": "Part of the building collapsed. I'm trapped under debris.",
+      "log_id": 108,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "8765",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rohan",
+      "message": "Trapped under rubble, leg injury severe.",
+      "log_id": 111,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 2,
+      "message_id": "1234",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Priya",
+      "message": "Building collapsing, critical condition, need help NOW!",
+      "log_id": 112,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 5,
+      "message_id": "5678",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "John",
+      "message": "Fire spreading, cannot escape, smoke everywhere.",
+      "log_id": 113,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 4,
+      "message_id": "3456",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Amit",
+      "message": "Need basic medicine, fever and cough spreading.",
+      "log_id": 115,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 3,
+      "message_id": "2345",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "David",
+      "message": "Child bleeding heavily, urgent medical help needed.",
+      "log_id": 117,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 1,
+      "message_id": "6789",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Aisha",
+      "message": "Seeking shelter, exposed to elements. Where can we go?",
+      "log_id": 118,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 4,
+      "message_id": "8732",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rohan",
+      "message": "Fire spreading, trapped!",
+      "log_id": 121,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "1290",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Priya",
+      "message": "No water, small children.",
+      "log_id": 122,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "4501",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Liam",
+      "message": "Child injured, bleeding badly!",
+      "log_id": 123,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 1,
+      "message_id": "6789",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Anya",
+      "message": "Building collapsed, trapped!",
+      "log_id": 126,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 2,
+      "message_id": "7788",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Arjun",
+      "message": "Critical, severe head injury!",
+      "log_id": 129,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "7891",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Raj",
+      "message": "Trapped under debris, leg injured!",
+      "log_id": 131,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 4,
+      "message_id": "5678",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Amit",
+      "message": "Fire spreading fast, need help now!",
+      "log_id": 133,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 5,
+      "message_id": "3456",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "John",
+      "message": "Child critically injured, bleeding heavily!",
+      "log_id": 135,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 3,
+      "message_id": "1122",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rohan",
+      "message": "Building collapsed, many trapped, send rescue!",
+      "log_id": 137,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "1234",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rohan",
+      "message": "People trapped under debris, critical injuries.",
+      "log_id": 141,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "5678",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Sarah",
+      "message": "No clean water or food for two days.",
+      "log_id": 142,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 5,
+      "message_id": "3456",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Emily",
+      "message": "Fire spreading rapidly, need immediate help!",
+      "log_id": 144,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 3,
+      "message_id": "7890",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Sanjay",
+      "message": "Need shelter materials, cold at night.",
+      "log_id": 145,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 2,
+      "message_id": "2109",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Chloe",
+      "message": "Building collapsed, many bleeding. Send medics now!",
+      "log_id": 146,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 4,
+      "message_id": "8765",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Nina",
+      "message": "Leg broken, severe bleeding. Can't move.",
+      "log_id": 148,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "8765",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Priya",
+      "message": "Structure collapsed, many trapped!",
+      "log_id": 151,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 1,
+      "message_id": "1234",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "John",
+      "message": "Fire spreading rapidly, need help!",
+      "log_id": 152,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 5,
+      "message_id": "5678",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Rajesh",
+      "message": "Serious injury, heavy bleeding here.",
+      "log_id": 153,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 2,
+      "message_id": "9012",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Sarah",
+      "message": "Critical condition, need medical evacuation.",
+      "log_id": 154,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "7345",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rahul",
+      "message": "Building collapsed, several injured. Urgent medical help needed!",
+      "log_id": 161,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 4,
+      "message_id": "2876",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Sarah",
+      "message": "Trapped under debris, can hear people calling.",
+      "log_id": 162,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 3,
+      "message_id": "6281",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "David",
+      "message": "Fire spreading, can't evacuate. My family is here.",
+      "log_id": 164,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 5,
+      "message_id": "1092",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Michael",
+      "message": "Severe bleeding from a deep cut, need first aid.",
+      "log_id": 166,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 1,
+      "message_id": "1928",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Arjun",
+      "message": "We require temporary shelter, monsoon coming soon.",
+      "log_id": 169,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "7432",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rohan",
+      "message": "Building collapsed, I'm trapped under debris.",
+      "log_id": 171,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 2,
+      "message_id": "8123",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Priya",
+      "message": "Injured, bleeding badly. Location compromised.",
+      "log_id": 174,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 5,
+      "message_id": "6319",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Meena",
+      "message": "Fire spreading, need immediate help!",
+      "log_id": 176,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 3,
+      "message_id": "7789",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "David",
+      "message": "Need essential medicines, urgent.",
+      "log_id": 177,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 1,
+      "message_id": "9011",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Aisha",
+      "message": "Critical medical emergency, someone help now!",
+      "log_id": 178,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 4,
+      "message_id": "4109",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Emily",
+      "message": "Seeking shelter, no power in this area.",
+      "log_id": 180,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "8734",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Priya",
+      "message": "Trapped under rubble, child injured, urgent help!",
+      "log_id": 181,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "1029",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rohan",
+      "message": "Fire spreading, two critically burned, need medics NOW!",
+      "log_id": 182,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 4,
+      "message_id": "6412",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Sarah",
+      "message": "Building collapsing, leg bleeding, immediate rescue needed.",
+      "log_id": 183,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 5,
+      "message_id": "3801",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "David",
+      "message": "Mother and baby trapped, severe injuries, send support!",
+      "log_id": 184,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 3,
+      "message_id": "9175",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Aisha",
+      "message": "No clean water for 36 hours, severe dehydration risk.",
+      "log_id": 185,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 2,
+      "message_id": "2568",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Arjun",
+      "message": "Food running low, elderly and sick need supplies urgently.",
+      "log_id": 186,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 1,
+      "message_id": "7300",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Emily",
+      "message": "Medicine for chronic conditions exhausted, need immediate resupply.",
+      "log_id": 187,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 4,
+      "message_id": "4921",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Rajesh",
+      "message": "Power failure impacting medical devices, require generator.",
+      "log_id": 188,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "5678",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rahul",
+      "message": "Fire spreading rapidly, need evacuation!",
+      "log_id": 191,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 4,
+      "message_id": "9012",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Priya",
+      "message": "No clean water for 24 hours, many sick.",
+      "log_id": 192,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 3,
+      "message_id": "7890",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Aisha",
+      "message": "Child has severe head injury, bleeding a lot!",
+      "log_id": 194,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 5,
+      "message_id": "5670",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Sandeep",
+      "message": "Trapped under debris, leg crushed.",
+      "log_id": 196,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 4,
+      "message_id": "2109",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Michael",
+      "message": "Need shelter materials, exposed to elements.",
+      "log_id": 198,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 1,
+      "message_id": "6543",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Kavita",
+      "message": "Building unstable, imminent collapse risk!",
+      "log_id": 199,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "8472",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rahul",
+      "message": "Building collapsing, immediate help!",
+      "log_id": 201,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 3,
+      "message_id": "9012",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "David",
+      "message": "Trapped, severe bleeding, urgent!",
+      "log_id": 204,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "3321",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Anjali",
+      "message": "Elderly need medicine for heart condition.",
+      "log_id": 205,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 2,
+      "message_id": "6789",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Michael",
+      "message": "Fire spreading quickly, need evacuation!",
+      "log_id": 206,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 5,
+      "message_id": "7777",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Arjun",
+      "message": "Child injured, critical condition, rescue needed!",
+      "log_id": 209,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 3,
+      "message_id": "1234",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Emily",
+      "message": "Seeking safe shelter for family of five.",
+      "log_id": 210,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "8745",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rohan",
+      "message": "Building collapsed, trapped inside, cannot move leg!",
+      "log_id": 211,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 2,
+      "message_id": "1092",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Priya",
+      "message": "Urgent medical needed, severe bleeding from head wound.",
+      "log_id": 212,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 5,
+      "message_id": "5618",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "David",
+      "message": "No water or food for 2 days, children are thirsty.",
+      "log_id": 213,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "9304",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Pooja",
+      "message": "Need shelter and blankets, it's getting very cold.",
+      "log_id": 214,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 4,
+      "message_id": "2177",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Michael",
+      "message": "Fire spreading rapidly on 3rd floor, people screaming!",
+      "log_id": 215,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 3,
+      "message_id": "3456",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Amit",
+      "message": "My son is not breathing, we need a medic now!",
+      "log_id": 217,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 1,
+      "message_id": "6289",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Sarah",
+      "message": "Running out of medicine for heart condition, critical.",
+      "log_id": 218,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 4,
+      "message_id": "8732",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rahul",
+      "message": "Trapped under debris, leg injured!",
+      "log_id": 221,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "4501",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "John",
+      "message": "Building collapsing, need immediate help!",
+      "log_id": 223,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 2,
+      "message_id": "9110",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Sarah",
+      "message": "Elderly here, no power or shelter.",
+      "log_id": 224,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "3276",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Amit",
+      "message": "Someone is bleeding heavily here.",
+      "log_id": 225,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "2345",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Jessica",
+      "message": "Fire spreading quickly, evacuate!",
+      "log_id": 228,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 5,
+      "message_id": "5612",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Manoj",
+      "message": "Children need warm clothes and blankets.",
+      "log_id": 229,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "8734",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rohan",
+      "message": "Trapped under debris, leg bleeding badly. Need help!",
+      "log_id": 231,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 5,
+      "message_id": "1290",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Priya",
+      "message": "No water for 2 days. Children getting sick.",
+      "log_id": 232,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 1,
+      "message_id": "5601",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "David",
+      "message": "Fire spreading, family inside! Urgent rescue!",
+      "log_id": 233,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 2,
+      "message_id": "7742",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Meera",
+      "message": "Building unstable, multiple injuries. Critical!",
+      "log_id": 236,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 4,
+      "message_id": "2567",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Alex",
+      "message": "Need blankets and shelter. It's getting cold.",
+      "log_id": 237,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "4089",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Sanjay",
+      "message": "Child unconscious, head injury. Immediate medical needed!",
+      "log_id": 238,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 2,
+      "message_id": "8765",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rohan",
+      "message": "Trapped under debris, leg injured!",
+      "log_id": 241,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "1234",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Priya",
+      "message": "Need water and food, kids are thirsty.",
+      "log_id": 242,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 1,
+      "message_id": "9876",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "John",
+      "message": "Building collapsing, need immediate help!",
+      "log_id": 243,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 5,
+      "message_id": "4321",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Amit",
+      "message": "Fire spreading, send fire suppression now!",
+      "log_id": 245,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 3,
+      "message_id": "3344",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Rajesh",
+      "message": "Urgent need for medical supplies, especially bandages.",
+      "log_id": 247,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 1,
+      "message_id": "5566",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Olivia",
+      "message": "Bleeding heavily, need a medic now!",
+      "log_id": 248,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 4,
+      "message_id": "7788",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Kabir",
+      "message": "Running low on baby formula and diapers.",
+      "log_id": 249,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "8723",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Priya",
+      "message": "My leg is bleeding badly, need help immediately!",
+      "log_id": 251,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "1098",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rahul",
+      "message": "No water for 24 hours. Families are dehydrated.",
+      "log_id": 252,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 4,
+      "message_id": "4501",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "John",
+      "message": "Building collapsed, I'm trapped under debris. Can hear others.",
+      "log_id": 253,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 3,
+      "message_id": "7789",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Sarah",
+      "message": "Running low on food and baby formula. Shelter needed.",
+      "log_id": 254,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "2134",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Amit",
+      "message": "Fire spreading on second floor! Urgent rescue needed.",
+      "log_id": 255,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 4,
+      "message_id": "6578",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Rohan",
+      "message": "Urgent need for medicines, especially for elderly.",
+      "log_id": 257,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 1,
+      "message_id": "3210",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Maria",
+      "message": "Critical injury, unconscious person here. Send medical team now.",
+      "log_id": 258,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "8876",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Olivia",
+      "message": "Power out, temperatures dropping. Need blankets and shelter.",
+      "log_id": 260,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "8765",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rahul",
+      "message": "Trapped under debris, leg injury, cannot move!",
+      "log_id": 261,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 4,
+      "message_id": "1234",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Priya",
+      "message": "No water or food for 2 days, please send supplies.",
+      "log_id": 262,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "5678",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "David",
+      "message": "Fire spreading on level 3, need immediate help!",
+      "log_id": 263,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 1,
+      "message_id": "2345",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Sarah",
+      "message": "Need blankets and shelter, it's very cold tonight.",
+      "log_id": 265,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 5,
+      "message_id": "6789",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Amit",
+      "message": "Bleeding badly from a cut, critical condition, send medical!",
+      "log_id": 266,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 4,
+      "message_id": "7890",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Sanjay",
+      "message": "Building unstable, a wall collapsed near me, help!",
+      "log_id": 268,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "5678",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rohan",
+      "message": "Trapped, building collapsing! Urgent help needed.",
+      "log_id": 271,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 4,
+      "message_id": "1029",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Priya",
+      "message": "Severe bleeding, need medical team now!",
+      "log_id": 272,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "8831",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "John",
+      "message": "Fire spreading fast! We are stuck on the second floor.",
+      "log_id": 273,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "4175",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Anjali",
+      "message": "My child is critically injured, send help immediately.",
+      "log_id": 274,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "7742",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Amit",
+      "message": "We need blankets and shelter. Exposed to cold.",
+      "log_id": 276,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "7234",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rahul",
+      "message": "Fire spreading, need urgent evacuation!",
+      "log_id": 281,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "1890",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Priya",
+      "message": "Building collapse, multiple injured. Trapped!",
+      "log_id": 282,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 4,
+      "message_id": "4567",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Sarah",
+      "message": "Child critically injured, bleeding. Medics needed now!",
+      "log_id": 283,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 5,
+      "message_id": "8012",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "David",
+      "message": "Gas leak confirmed. Immediate danger, evacuate!",
+      "log_id": 284,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 4,
+      "message_id": "8732",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Ravi",
+      "message": "Fire spreading, trapped!",
+      "log_id": 291,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "1290",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Sarah",
+      "message": "No water or food for 2 days.",
+      "log_id": 292,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "4501",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Arjun",
+      "message": "Leg injury, heavy bleeding. Need help immediately!",
+      "log_id": 293,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "3021",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Priya",
+      "message": "Building collapsed, people trapped.",
+      "log_id": 295,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 2,
+      "message_id": "6789",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "David",
+      "message": "Need medicines for elderly.",
+      "log_id": 296,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 4,
+      "message_id": "2345",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Rahul",
+      "message": "Child with serious injury, urgent medical help.",
+      "log_id": 297,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 2,
+      "message_id": "8461",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rahul",
+      "message": "Building collapsing, people inside!",
+      "log_id": 301,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "5088",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Amit",
+      "message": "Trapped under debris, leg injured badly!",
+      "log_id": 305,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "1549",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Emily",
+      "message": "Power out, medical equipment failing.",
+      "log_id": 306,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 2,
+      "message_id": "3802",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Rohan",
+      "message": "Fire! Building burning fast!",
+      "log_id": 307,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 4,
+      "message_id": "7290",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Aisha",
+      "message": "Need shelter, severe weather incoming.",
+      "log_id": 308,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 1,
+      "message_id": "6955",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Neha",
+      "message": "Bleeding heavily, critical medical help needed NOW!",
+      "log_id": 310,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 1,
+      "message_id": "5831",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rahul",
+      "message": "Trapped under debris! Leg injury, bleeding heavily.",
+      "log_id": 311,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 3,
+      "message_id": "1902",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Priya",
+      "message": "No clean water for 24 hours. Need supplies.",
+      "log_id": 312,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 5,
+      "message_id": "7045",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "John",
+      "message": "Building collapsing around us! Urgent rescue needed.",
+      "log_id": 313,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 4,
+      "message_id": "9327",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Amit",
+      "message": "Fire spreading fast! People are critically injured.",
+      "log_id": 315,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "3490",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Fiona",
+      "message": "Someone is unconscious, head injury!",
+      "log_id": 318,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "4823",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Priya",
+      "message": "Building collapsing, people trapped!",
+      "log_id": 321,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "7301",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rohan",
+      "message": "Serious bleeding, need medical team now!",
+      "log_id": 323,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "9187",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Sanjay",
+      "message": "Fire spreading, help us escape!",
+      "log_id": 325,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 1,
+      "message_id": "6490",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Arjun",
+      "message": "Shelter needed, exposed to elements.",
+      "log_id": 327,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 3,
+      "message_id": "8112",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Chloe",
+      "message": "Child critically injured, urgent evacuation!",
+      "log_id": 328,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 4,
+      "message_id": "3567",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Vikram",
+      "message": "Medication exhausted, urgent refill needed.",
+      "log_id": 329,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 4,
+      "message_id": "8732",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rahul",
+      "message": "Trapped under debris, leg injured, severe pain.",
+      "log_id": 331,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "1905",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Sita",
+      "message": "No clean water for 2 days. Thirsty.",
+      "log_id": 332,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 1,
+      "message_id": "4011",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "David",
+      "message": "Fire spreading fast! Need immediate evacuation.",
+      "log_id": 333,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "2570",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Sarah",
+      "message": "We need food supplies, especially for children.",
+      "log_id": 335,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 1,
+      "message_id": "7118",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Arjun",
+      "message": "My daughter is bleeding badly, needs medical help now!",
+      "log_id": 336,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 3,
+      "message_id": "3692",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Emily",
+      "message": "Urgent medicines for elderly here.",
+      "log_id": 337,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 5,
+      "message_id": "5214",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Maria",
+      "message": "Building collapsed, trapped inside, help!",
+      "log_id": 339,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 3,
+      "message_id": "9115",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Rahul",
+      "message": "Floor gave way, trapped on 3rd floor. Broken arm. Cannot move.",
+      "log_id": 341,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 2,
+      "message_id": "8086",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Sarah",
+      "message": "No clean water for two days. Dehydration becoming critical.",
+      "log_id": 342,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 1,
+      "message_id": "5668",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Priyanka",
+      "message": "Child unconscious, severe head trauma. Critical medical help needed NOW.",
+      "log_id": 344,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 3,
+      "message_id": "9635",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "David",
+      "message": "Shelter destroyed. Exposed to elements. Need blankets, tents.",
+      "log_id": 345,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 2,
+      "message_id": "7519",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Meera",
+      "message": "Building collapsing! Trapped under rubble. Leg injury, bleeding heavily!",
+      "log_id": 346,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "6327",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Chris",
+      "message": "Babies need formula milk. Supplies exhausted.",
+      "log_id": 347,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "8173",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Aisha",
+      "message": "Fire spreading fast! Need immediate rescue. Several people stuck inside.",
+      "log_id": 348,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "3202",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Arjun",
+      "message": "Need medicines for elderly, heart condition. Power is out.",
+      "log_id": 349,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "6789",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rahul",
+      "message": "Building collapsing! Trapped, need help now!",
+      "log_id": 351,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "1234",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Priya",
+      "message": "No water for 2 days. Children are thirsty.",
+      "log_id": 352,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 3,
+      "message_id": "9012",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Sarah",
+      "message": "My leg is bleeding badly, can't move. Urgent medical!",
+      "log_id": 354,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 5,
+      "message_id": "7890",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Emily",
+      "message": "Fire spreading fast! Many injured inside.",
+      "log_id": 356,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 1,
+      "message_id": "2345",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Rohan",
+      "message": "Running out of insulin. Critical medicine needed.",
+      "log_id": 357,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 2,
+      "message_id": "6789",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Aisha",
+      "message": "Roof fell, I'm pinned. Cannot breathe!",
+      "log_id": 358,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 3,
+      "message_id": "6321",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Sanjay",
+      "message": "My child is bleeding heavily, critical condition!",
+      "log_id": 361,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 5,
+      "message_id": "5007",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Maria",
+      "message": "Building collapsing, trapped, leg injured!",
+      "log_id": 363,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 4,
+      "message_id": "1432",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Amit",
+      "message": "Power out, need batteries and shelter. Kids are cold.",
+      "log_id": 365,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 5,
+      "message_id": "9910",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Maya",
+      "message": "Serious injury, losing consciousness, send medic!",
+      "log_id": 366,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 1,
+      "message_id": "3218",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Rahul",
+      "message": "No water for 2 days, urgent need for potable water.",
+      "log_id": 367,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "4567",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Arjun",
+      "message": "Trapped under rubble, can hear voices, send help!",
+      "log_id": 369,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 4,
+      "message_id": "2001",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Sarah",
+      "message": "Running low on critical medicine for elderly. Help!",
+      "log_id": 370,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "8721",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rahul",
+      "message": "Building collapsed, wife trapped, bleeding! Urgent help.",
+      "log_id": 371,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 2,
+      "message_id": "6377",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Sarah",
+      "message": "Fire spreading rapidly near Sector 7. People trapped!",
+      "log_id": 374,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "2910",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Amit",
+      "message": "No shelter available, many exposed. Need tents.",
+      "log_id": 375,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 2,
+      "message_id": "9156",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "David",
+      "message": "Child critically injured from debris. Need medical team now!",
+      "log_id": 376,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 1,
+      "message_id": "7004",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Aisha",
+      "message": "Power out for 24 hours. Generators needed for hospital.",
+      "log_id": 377,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "5842",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Sanjay",
+      "message": "My leg is pinned under concrete. Severe pain.",
+      "log_id": 379,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 2,
+      "message_id": "1165",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Maria",
+      "message": "Running low on clean drinking water and baby formula.",
+      "log_id": 380,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 4,
+      "message_id": "1234",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rohan",
+      "message": "Fire spreading fast!",
+      "log_id": 381,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 1,
+      "message_id": "5678",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Priya",
+      "message": "Trapped under rubble, can hear voices!",
+      "log_id": 382,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "9012",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "John",
+      "message": "Severe head injury, bleeding badly!",
+      "log_id": 383,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 2,
+      "message_id": "3456",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Sanjana",
+      "message": "Building collapsing near us, help!",
+      "log_id": 384,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 1,
+      "message_id": "1122",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Sarah",
+      "message": "Power out, need urgent medicines for elderly.",
+      "log_id": 386,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 3,
+      "message_id": "3344",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Vivek",
+      "message": "Shelter destroyed, seeking blankets.",
+      "log_id": 387,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 4,
+      "message_id": "5566",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Meena",
+      "message": "Baby formula and supplies critically low.",
+      "log_id": 388,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 4,
+      "message_id": "8765",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rakesh",
+      "message": "Trapped under debris, bleeding heavily. Need urgent help!",
+      "log_id": 391,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "1234",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Sarah",
+      "message": "Fire spreading quickly! My leg is injured, cannot move. Critical!",
+      "log_id": 392,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 1,
+      "message_id": "9876",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Amit",
+      "message": "Building collapsed, many trapped. Hear screams. Send rescue!",
+      "log_id": 393,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 2,
+      "message_id": "4567",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Priya",
+      "message": "Child has critical head injury. We need medics NOW!",
+      "log_id": 394,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "3210",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "John",
+      "message": "No water or food for 2 days. Kids are weak. Please help!",
+      "log_id": 395,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 2,
+      "message_id": "1011",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "David",
+      "message": "Shelter needed, exposed to elements. Power out everywhere.",
+      "log_id": 397,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 4,
+      "message_id": "7823",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Aisha",
+      "message": "Building collapsing, injured!",
+      "log_id": 401,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "1094",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "David",
+      "message": "Trapped under rubble, bleeding heavily.",
+      "log_id": 402,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "5501",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Priya",
+      "message": "Fire spreading, need urgent help!",
+      "log_id": 403,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "2187",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Mark",
+      "message": "Child critical, head injury, send medic!",
+      "log_id": 404,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "9345",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Kiran",
+      "message": "No water or food for 2 days.",
+      "log_id": 405,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 5,
+      "message_id": "3876",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Rahul",
+      "message": "Medicine for elderly running out fast.",
+      "log_id": 407,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "8734",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Priya",
+      "message": "Fire spreading, trapped inside!",
+      "log_id": 411,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "5501",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Sarah",
+      "message": "Urgent! Child injured, needs medic now.",
+      "log_id": 413,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "1478",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Emily",
+      "message": "My arm is broken, heavy bleeding!",
+      "log_id": 415,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 2,
+      "message_id": "6321",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "David",
+      "message": "Food supplies critically low here.",
+      "log_id": 416,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 1,
+      "message_id": "3045",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "John",
+      "message": "Building collapsing, we are trapped!",
+      "log_id": 418,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "8765",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rahul",
+      "message": "Trapped under debris, leg bleeding heavily. Need help NOW.",
+      "log_id": 421,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 1,
+      "message_id": "1122",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Sarah",
+      "message": "House collapsed! My child is injured, critical.",
+      "log_id": 422,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 2,
+      "message_id": "9988",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Amit",
+      "message": "Fire spreading near sector 7. Evacuate quickly!",
+      "log_id": 424,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 2,
+      "message_id": "5432",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Deepa",
+      "message": "Need shelter. Our home is gone. Cold here.",
+      "log_id": 426,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 5,
+      "message_id": "1001",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Rohan",
+      "message": "My mother is unconscious and bleeding. Urgent medical help!",
+      "log_id": 427,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "2345",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Lisa",
+      "message": "Generators down, no power. Meds need refrigeration.",
+      "log_id": 428,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 3,
+      "message_id": "6543",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Arjun",
+      "message": "Urgent need for medical personnel and first aid kits.",
+      "log_id": 429,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 3,
+      "message_id": "6321",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Emily",
+      "message": "No shelter, exposed to elements, need warmth.",
+      "log_id": 431,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 5,
+      "message_id": "1374",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Priya",
+      "message": "Severe head injury, bleeding badly!",
+      "log_id": 434,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 2,
+      "message_id": "4109",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Sarah",
+      "message": "Child trapped under debris, critical!",
+      "log_id": 435,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 3,
+      "message_id": "9520",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Amit",
+      "message": "Building collapsed, many trapped!",
+      "log_id": 436,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 2,
+      "message_id": "3452",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "David",
+      "message": "Fire spreading fast, need help!",
+      "log_id": 439,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "5678",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rahul",
+      "message": "Fire spreading! Need immediate help!",
+      "log_id": 441,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 4,
+      "message_id": "1234",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Sarah",
+      "message": "Trapped under debris, leg bleeding badly.",
+      "log_id": 442,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "9876",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Amit",
+      "message": "My son is critically injured, send medics!",
+      "log_id": 443,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "4321",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Pooja",
+      "message": "Building collapsing, send rescue now!",
+      "log_id": 444,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "6789",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "David",
+      "message": "No water or food for 2 days. Children are weak.",
+      "log_id": 445,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "2468",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Aisha",
+      "message": "Need insulin and basic medicines ASAP.",
+      "log_id": 446,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 1,
+      "message_id": "7382",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Priya",
+      "message": "Trapped under debris, leg bleeding badly.",
+      "log_id": 451,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 5,
+      "message_id": "1934",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Rahul",
+      "message": "No clean water for 2 days, running out of food.",
+      "log_id": 452,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "6278",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Alice",
+      "message": "Fire spreading fast, cannot escape.",
+      "log_id": 453,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 4,
+      "message_id": "8521",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Fatima",
+      "message": "Need medicine for elderly, especially insulin.",
+      "log_id": 455,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 1,
+      "message_id": "3076",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "John",
+      "message": "Building collapsing, send help immediately!",
+      "log_id": 456,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "2459",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Emily",
+      "message": "Child critically injured, needs medical evacuation now.",
+      "log_id": 459,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 3,
+      "message_id": "7810",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Rajesh",
+      "message": "Seeking shelter for 5 people, cold and wet.",
+      "log_id": 460,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "1234",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rahul",
+      "message": "Building collapsed, trapped!",
+      "log_id": 461,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 3,
+      "message_id": "3456",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Sarah",
+      "message": "Leg injury, bleeding heavily!",
+      "log_id": 464,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 2,
+      "message_id": "1122",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Mark",
+      "message": "Fire spreading, need evacuation!",
+      "log_id": 466,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 5,
+      "message_id": "7788",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Emily",
+      "message": "Two children injured, unconscious!",
+      "log_id": 469,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "8473",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Priya",
+      "message": "Trapped under rubble, leg injury severe!",
+      "log_id": 471,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "1029",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rahul",
+      "message": "No clean water for two days, dehydration.",
+      "log_id": 472,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 3,
+      "message_id": "9101",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "David",
+      "message": "Fire spreading quickly, need evacuation now!",
+      "log_id": 474,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 2,
+      "message_id": "7789",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Rohan",
+      "message": "Building collapsing, critical condition here!",
+      "log_id": 476,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 1,
+      "message_id": "2004",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Emily",
+      "message": "Running out of critical medicine.",
+      "log_id": 477,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "6123",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Akash",
+      "message": "Bleeding heavily, urgent medical help needed.",
+      "log_id": 478,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 4,
+      "message_id": "4567",
+      "gps": {
+        "latitude": 31.781293,
+        "longitude": 76.992394
+      },
+      "sender_name": "Liam",
+      "message": "Shelter destroyed, need cover from rain.",
+      "log_id": 479,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 1,
+      "message_id": "8472",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Raj",
+      "message": "Building collapsing! Trapped, cannot move!",
+      "log_id": 481,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 2,
+      "message_id": "1938",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Priya",
+      "message": "Severe bleeding, need medic and supplies NOW!",
+      "log_id": 482,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 4,
+      "message_id": "6005",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "John",
+      "message": "Fire spreading quickly, children inside! Urgent!",
+      "log_id": 483,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 3,
+      "message_id": "4129",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Aisha",
+      "message": "Child injured, unconscious. Critical help needed.",
+      "log_id": 484,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 5,
+      "message_id": "2801",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "David",
+      "message": "Shelter urgently needed for elderly and infants.",
+      "log_id": 486,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 2,
+      "message_id": "9540",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Sanjay",
+      "message": "Medicine for diabetes running low. Need resupply.",
+      "log_id": 487,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 5,
+      "current_node": 3,
+      "message_id": "3617",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "Sarah",
+      "message": "Power out for days. Need warm blankets and light.",
+      "log_id": 488,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 2,
+      "current_node": 4,
+      "message_id": "1234",
+      "gps": {
+        "latitude": 31.782962,
+        "longitude": 77.003282
+      },
+      "sender_name": "Rahul",
+      "message": "Fire spreading fast, trapped!",
+      "log_id": 491,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 3,
+      "current_node": 2,
+      "message_id": "3456",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Sarah",
+      "message": "Child injured, heavy bleeding.",
+      "log_id": 494,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 5,
+      "message_id": "7890",
+      "gps": {
+        "latitude": 31.774428,
+        "longitude": 76.98496
+      },
+      "sender_name": "Amit",
+      "message": "Need medicine for elderly.",
+      "log_id": 495,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 1,
+      "current_node": 2,
+      "message_id": "1122",
+      "gps": {
+        "latitude": 31.779238,
+        "longitude": 76.986709
+      },
+      "sender_name": "Emily",
+      "message": "Building collapsed, people trapped.",
+      "log_id": 496,
+      "urgency": "HIGH"
+    },
+    {
+      "source_node": 4,
+      "current_node": 1,
+      "message_id": "7788",
+      "gps": {
+        "latitude": 31.781938,
+        "longitude": 76.997646
+      },
+      "sender_name": "John",
+      "message": "Critical patient needs immediate help.",
+      "log_id": 499,
+      "urgency": "HIGH"
+    }
+  ]
+}
