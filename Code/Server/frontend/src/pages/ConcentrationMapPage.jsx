@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { MapPin, AlertTriangle, Info, CheckCircle, Layers } from 'lucide-react';
 import { useMessageStore } from '../store/useMessageStore';
-
+import * as L from 'leaflet';
+window.L = L;                 
 const ConcentrationMapPage = () => {
     const { messages, fetchMessages } = useMessageStore();
     const [allData, setAllData] = useState([]);

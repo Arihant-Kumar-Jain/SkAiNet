@@ -3,10 +3,19 @@ from flask_cors import CORS
 import serial
 import json 
 import threading
-
+import os
 app = Flask(__name__)
-CORS(app)
+DEFAULT_ALLOWED_ORIGIN = "https://skainet-five.vercel.app"
+allowed_origin = os.getenv("ALLOWED_ORIGIN", DEFAULT_ALLOWED_ORIGIN)
 
+# Use flask-cors to configure CORS per-resource and allow credentials if needed.
+# Here we allow only GET requests from the specified origin.
+CORS(
+    app,
+    resources={r"/api/*": {"origins": allowed_origin}},
+    supports_credentials=False,   # set True if you plan to send cookies/auth
+    methods=["GET", "OPTIONS"]
+)
 # Global variables
 messages = []
 ser = None
