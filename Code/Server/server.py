@@ -1,121 +1,116 @@
-from flask import Flask, jsonify
-from flask_cors import CORS
 import serial
-import json 
+import json
 import threading
+import requests
+import time
+import google.generativeai as genai
 import os
-app = Flask(__name__)
-DEFAULT_ALLOWED_ORIGIN = "https://skainet-five.vercel.app"
-allowed_origin = os.getenv("ALLOWED_ORIGIN", DEFAULT_ALLOWED_ORIGIN)
+from dotenv import load_dotenv
 
-# Use flask-cors to configure CORS per-resource and allow credentials if needed.
-# Here we allow only GET requests from the specified origin.
-CORS(
-    app,
-    resources={r"/api/*": {"origins": allowed_origin}},
-    supports_credentials=False,   # set True if you plan to send cookies/auth
-    methods=["GET", "OPTIONS"]
-)
-# Global variables
-messages = []
-ser = None
+# Load environment variables from .env file
+load_dotenv()
 
-# ---------- SERIAL COMMUNICATION ----------
+BACKEND_URL = "http://127.0.0.1:5000/api/GetMessages"
+GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
+
+if not GEMINI_API_KEY:
+    print("[ERROR] GEMINI_API_KEY not found in .env file")
+    exit(1)
+
+# ---------- SERIAL CONFIG ----------
+SERIAL_PORT = "COM3"
+BAUD_RATE = 115200
+TIMEOUT = 1
+
+# ---------- INIT SERIAL ----------
 def init_serial():
-    """Initialize serial connection to node on COM3"""
-    global ser
     try:
-        ser = serial.Serial(
-            port='COM3',
-            baudrate=9600,
-            timeout=1
-        )
-        print(f"[INFO] Serial connection established on COM3")
-        return True
+        ser = serial.Serial(SERIAL_PORT, baudrate=BAUD_RATE, timeout=TIMEOUT)
+        print(f"[INFO] Connected to {SERIAL_PORT}")
+        return ser
     except Exception as e:
-        print(f"[ERROR] Failed to connect to COM3: {e}")
-        return False
+        print(f"[ERROR] Serial connection failed: {e}")
+        return None
 
-def read_serial_loop():
-    """Background thread to read serial data from node"""
-    global ser, messages
-    
-    while True:
-        if ser and ser.is_open:
-            try:
-                if ser.in_waiting > 0:
-                    line = ser.readline().decode('utf-8').strip()
-                    
-                    if line:
-                        try:
-                            data = json.loads(line)
-                            
-                            new_message = {
-                                "src": str(data.get('source_node', data.get('src', '1'))),
-                                "cur": str(data.get('current_node', data.get('cur', '1'))),
-                                "msg_id": str(data.get('message_id', data.get('msg_id', '0000'))),
-                                "name": data.get('sender_name', data.get('name', '')),
-                                "message": data.get('message', ''),
-                                "gps": data.get('gps'),
-                                "urgency": data.get('urgency')
-                            }
-                            
-                            if not any(m['src'] == new_message['src'] and m['msg_id'] == new_message['msg_id'] for m in messages):
-                                messages.append(new_message)
-                                print(f"[NEW MESSAGE] {new_message['name']}: {new_message['message'][:50]}...")
-                                
-                                if len(messages) > 200:
-                                    messages.pop(0)
-                        
-                        except json.JSONDecodeError:
-                            print(f"[WARNING] Invalid JSON from serial: {line}")
-            
-            except Exception as e:
-                print(f"[ERROR] Serial read error: {e}")
+# ---------- GEMINI URGENCY ANALYSIS ----------
+def analyze_urgency_with_gemini(message_text):
+    try:
+        genai.configure(api_key=GEMINI_API_KEY)
+        model = genai.GenerativeModel('gemini-1.5-flash')
+        
+        prompt = f"""Analyze this message and determine its urgency level. 
+        Respond with ONLY one word: 'HIGH', 'MEDIUM', or 'LOW'.
+        
+        Message: {message_text}"""
+        
+        response = model.generate_content(prompt)
+        urgency = response.text.strip().upper()
+        
+        # Validate response
+        valid_urgencies = ['HIGH', 'MEDIUM', 'LOW']
+        if urgency not in valid_urgencies:
+            urgency = 'LOW'
+        
+        print(f"[GEMINI] Urgency detected: {urgency}")
+        return urgency
+    except Exception as e:
+        print(f"[ERROR] Gemini API call failed: {e}")
+        return 'LOW'  # Default to LOW on error
 
-# ---------- API ROUTES ----------
-@app.route("/api/messages", methods=["GET"])
-def get_messages():
-    """Get all messages"""
-    return jsonify(messages)
-
-@app.route("/api/health", methods=["GET"])
-def health():
-    """Health check endpoint"""
-    serial_status = "connected" if ser and ser.is_open else "disconnected"
-    return jsonify({
-        "status": "healthy",
-        "total_messages": len(messages),
-        "serial_port": "COM3",
-        "serial_status": serial_status
-    })
-
-@app.route("/")
-def index():
-    return jsonify({
-        "service": "skAiNet Node Data Monitor",
-        "status": "running",
-        "serial_port": "COM3",
-        "endpoints": {
-            "/api/messages": "GET - Fetch all messages",
-            "/api/health": "GET - Health check"
+# ---------- SEND TO BACKEND ----------
+def send_to_backend(message_data):
+    try:
+        payload = {
+            "logs": [message_data]
         }
-    })
+        response = requests.post(BACKEND_URL, json=payload, timeout=5)
+        if response.status_code == 200:
+            print(f"[UPLOADED] Sent message_id={message_data.get('message_id')} with urgency={message_data.get('urgency')}")
+        else:
+            print(f"[WARN] Upload failed {response.status_code}: {response.text}")
+    except Exception as e:
+        print(f"[ERROR] Failed to send to backend: {e}")
 
-# ---------- STARTUP ----------
+# ---------- READ LOOP ----------
+def read_serial_loop(ser):
+    while True:
+        try:
+            if ser.in_waiting > 0:
+                line = ser.readline().decode("utf-8").strip()
+                if line:
+                    try:
+                        data = json.loads(line)
+                        message_text = data.get("message", "")
+                        
+                        # Analyze urgency with Gemini
+                        urgency = analyze_urgency_with_gemini(message_text)
+                        
+                        message = {
+                            "source_node": data.get("source_node", 0),
+                            "current_node": data.get("current_node", 0),
+                            "message_id": data.get("message_id", "0000"),
+                            "gps": data.get("gps", {}),
+                            "sender_name": data.get("sender_name", ""),
+                            "message": message_text,
+                            "log_id": int(time.time()),
+                            "urgency": urgency
+                        }
+                        print(f"[NEW MESSAGE] {message['sender_name']} - {message['message'][:40]}...")
+                        send_to_backend(message)
+                    except json.JSONDecodeError:
+                        print(f"[WARNING] Invalid JSON: {line}")
+        except Exception as e:
+            print(f"[ERROR] Serial read error: {e}")
+            time.sleep(2)
+
+# ---------- MAIN ----------
 if __name__ == "__main__":
-    print("=" * 60)
-    print("skAiNet Node Data Monitor Server")
-    print("=" * 60)
-    
-    if init_serial():
-        serial_thread = threading.Thread(target=read_serial_loop, daemon=True)
-        serial_thread.start()
-        print(f"[INFO] Started serial data reading from COM3")
+    ser = init_serial()
+    if ser:
+        thread = threading.Thread(target=read_serial_loop, args=(ser,), daemon=True)
+        thread.start()
+        print("[INFO] Listening for serial data...")
+        while True:
+            time.sleep(1)
     else:
-        print("[ERROR] Failed to initialize serial connection")
-    
-    print(f"[INFO] Server starting on http://0.0.0.0:5000")
-    print("=" * 60)
-    
-    app.run(host="0.0.0.0", port=5000, debug=False)
+        print("[FATAL] Exiting due to serial connection failure.")

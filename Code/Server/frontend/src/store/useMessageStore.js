@@ -1,57 +1,72 @@
 import { create } from "zustand";
-import { axiosInstance } from "../lib/axios";
+import { axiosInstance } from "../Lib/axios";
 
 export const useMessageStore = create((set, get) => ({
   messages: [],
   isFetchingMessages: false,
   error: null,
 
-  // Fetch messages from API
+  // Fetch messages from backend (expects { logs: [...] })
   fetchMessages: async () => {
     set({ isFetchingMessages: true, error: null });
     try {
       const response = await axiosInstance.get("/messages");
-      set({ messages: response.data });
+      const logs = response.data.logs || [];
+      set({ messages: logs });
     } catch (error) {
       console.error("Error fetching messages:", error);
-      set({ error: error.response?.data?.error || error.message || "Failed to fetch messages" });
+      set({
+        error:
+          error.response?.data?.error ||
+          error.message ||
+          "Failed to fetch messages",
+      });
     } finally {
       set({ isFetchingMessages: false });
     }
   },
 
-  // Add a single message (useful for real-time updates)
-  addMessage: (message) => {
+  // Add a single new message manually
+  addMessage: (newMessage) => {
     const { messages } = get();
-    
-    // Avoid duplicates based on src and msg_id
+
     const isDuplicate = messages.some(
-      msg => msg.src === message.src && msg.msg_id === message.msg_id
+      (msg) =>
+        msg.message_id === newMessage.message_id &&
+        msg.source_node === newMessage.source_node
     );
-    
+
     if (!isDuplicate) {
-      const updatedMessages = [...messages, message];
-      
-      // Limit to last 200 messages
-      if (updatedMessages.length > 200) {
-        updatedMessages.shift();
-      }
-      
+      const updatedMessages = [...messages, newMessage];
+      if (updatedMessages.length > 200) updatedMessages.shift();
       set({ messages: updatedMessages });
     }
   },
 
-  // Clear all messages
+  // Clear messages (calls backend)
   clearMessages: async () => {
     try {
-      await axiosInstance.post("/test/clear");
+      await axiosInstance.post("/clearMessages");
       set({ messages: [], error: null });
     } catch (error) {
       console.error("Error clearing messages:", error);
-      set({ error: error.response?.data?.error || error.message || "Failed to clear messages" });
+      set({
+        error:
+          error.response?.data?.error ||
+          error.message ||
+          "Failed to clear messages",
+      });
     }
   },
 
-  // Reset store state
-  resetMessages: () => set({ messages: [], error: null, isFetchingMessages: false }),
+  markRescued: async (log_id) => {
+    try {
+      await axiosInstance.post("/markRescued", { log_id: log_id });
+    } catch (error) {
+      console.error("Error marking rescued:", error);
+    }
+  },
+
+  resetMessages: () =>
+    set({ messages: [], error: null, isFetchingMessages: false }),
 }));

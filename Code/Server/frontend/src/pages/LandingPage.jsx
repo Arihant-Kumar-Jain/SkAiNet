@@ -1,8 +1,10 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect, useRef } from 'react';
-import { useMessageStore } from '../store/useMessageStore';
-import { 
-    Trash2, Download, Search, Clock, 
-    MapPin, AlertTriangle, Info, CheckCircle, 
+import { useMessageStore } from '../Store/useMessageStore';
+import {
+    Trash2, Download, Search, Clock,
+    MapPin, AlertTriangle, Info, CheckCircle,
     Map as MapIcon, Navigation, X,
     Radio
 } from 'lucide-react';
@@ -21,12 +23,12 @@ const LandingPage = () => {
     useEffect(() => {
         const savedMode = localStorage.getItem('darkMode') === 'true';
         setDarkMode(savedMode);
-        
+
         const observer = new MutationObserver(() => {
             const isDark = localStorage.getItem('darkMode') === 'true';
             setDarkMode(isDark);
         });
-        
+
         observer.observe(document.documentElement, { attributes: true });
         return () => observer.disconnect();
     }, []);
@@ -62,7 +64,7 @@ const LandingPage = () => {
         if (!mapElement) return;
 
         const map = L.map('global-map').setView([31.78, 77.00], 13);
-        
+
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '© OpenStreetMap contributors',
             maxZoom: 19
@@ -84,10 +86,10 @@ const LandingPage = () => {
         });
 
         const messagesWithGPS = filteredMessages.filter(msg => msg.gps);
-        
+
         messagesWithGPS.forEach((msg) => {
             const { latitude, longitude } = msg.gps;
-            
+
             let iconColor = '#3b82f6';
             if (msg.urgency === 'HIGH') iconColor = '#ef4444';
             else if (msg.urgency === 'MEDIUM') iconColor = '#f59e0b';
@@ -104,12 +106,12 @@ const LandingPage = () => {
                 .bindPopup(`
                     <div style="min-width: 200px; font-family: system-ui;">
                         <div style="margin-bottom: 8px;">
-                            <strong style="font-size: 14px;">${msg.name || 'Unknown'}</strong>
+                            <strong style="font-size: 14px;">${msg.sender_name || 'Unknown'}</strong>
                             ${msg.urgency ? `<span style="background: ${iconColor}; color: white; padding: 2px 6px; border-radius: 4px; font-size: 10px; margin-left: 6px;">${msg.urgency}</span>` : ''}
                         </div>
                         <p style="margin: 6px 0; font-size: 12px; color: #666;">${msg.message}</p>
                         <div style="margin-top: 8px; font-size: 11px; color: #999;">
-                            Node ${msg.src} → ${msg.cur} | ID: ${msg.msg_id}
+                            Node ${msg.source_node} → ${msg.current_node} | ID: ${msg.message_id}
                         </div>
                     </div>
                 `)
@@ -130,7 +132,7 @@ const LandingPage = () => {
         if (!mapElement || cardMapRefs.current[msgId]) return;
 
         const map = L.map(`map-${msgId}`).setView([latitude, longitude], 15);
-        
+
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '© OpenStreetMap',
             maxZoom: 19
@@ -154,21 +156,21 @@ const LandingPage = () => {
 
     // Filter messages
     const filteredMessages = messages.filter(msg => {
-        const matchesSearch = searchTerm === '' || 
+        const matchesSearch = searchTerm === '' ||
             msg.message?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            msg.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            msg.src?.toString().includes(searchTerm) ||
-            msg.msg_id?.toString().includes(searchTerm);
-        
-        const matchesFilter = filterType === 'all' || 
+            msg.sender_name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+            msg.source_node?.toString().includes(searchTerm) ||
+            msg.message_id?.toString().includes(searchTerm);
+
+        const matchesFilter = filterType === 'all' ||
             (filterType === 'withName' && msg.name) ||
             (filterType === 'withoutName' && !msg.name) ||
             (filterType === 'withGPS' && msg.gps);
-        
-        const matchesUrgency = urgencyFilter === 'all' || 
+
+        const matchesUrgency = urgencyFilter === 'all' ||
             msg.urgency === urgencyFilter;
-        
-        return matchesSearch && matchesFilter && matchesUrgency;
+  const notRescued = !msg.rescued; 
+        return matchesSearch && matchesFilter && matchesUrgency && notRescued;
     });
 
     // Export messages
@@ -184,19 +186,19 @@ const LandingPage = () => {
     };
 
     const getUrgencyStyles = (urgency) => {
-        const baseStyles = darkMode 
+        const baseStyles = darkMode
             ? {
                 HIGH: 'bg-red-900/30 border-red-700 text-red-300',
                 MEDIUM: 'bg-amber-900/30 border-amber-700 text-amber-300',
                 LOW: 'bg-green-900/30 border-green-700 text-green-300',
                 default: 'bg-slate-800 border-slate-700 text-slate-300'
-              }
+            }
             : {
                 HIGH: 'bg-red-50 border-red-200 text-red-700',
                 MEDIUM: 'bg-amber-50 border-amber-200 text-amber-700',
                 LOW: 'bg-green-50 border-green-200 text-green-700',
                 default: 'bg-slate-50 border-slate-200 text-slate-700'
-              };
+            };
         return baseStyles[urgency] || baseStyles.default;
     };
 
@@ -211,10 +213,11 @@ const LandingPage = () => {
 
     // Statistics
     const stats = {
-        high: messages.filter(m => m.urgency === 'HIGH').length,
-        medium: messages.filter(m => m.urgency === 'MEDIUM').length,
-        low: messages.filter(m => m.urgency === 'LOW').length,
-        withGPS: messages.filter(m => m.gps).length
+        high: messages.filter(m => m.urgency === 'HIGH' && !m.rescued).length,
+        medium: messages.filter(m => m.urgency === 'MEDIUM' && !m.rescued).length,
+        low: messages.filter(m => m.urgency === 'LOW' && !m.rescued).length,
+        withGPS: messages.filter(m => m.gps && !m.rescued).length,
+        rescued: messages.filter(m => m.rescued).length
     };
 
     const bgClass = darkMode ? 'bg-slate-900' : 'bg-slate-50';
@@ -254,7 +257,7 @@ const LandingPage = () => {
                             </div>
                         </div>
                     </div>
-                    
+
                     <div className={`${cardBg} rounded-xl shadow-sm border p-4 transition-colors duration-200`}>
                         <div className="flex items-center justify-between">
                             <div>
@@ -266,7 +269,7 @@ const LandingPage = () => {
                             </div>
                         </div>
                     </div>
-                    
+
                     <div className={`${cardBg} rounded-xl shadow-sm border p-4 transition-colors duration-200`}>
                         <div className="flex items-center justify-between">
                             <div>
@@ -278,7 +281,7 @@ const LandingPage = () => {
                             </div>
                         </div>
                     </div>
-                    
+
                     <div className={`${cardBg} rounded-xl shadow-sm border p-4 transition-colors duration-200`}>
                         <div className="flex items-center justify-between">
                             <div>
@@ -349,7 +352,7 @@ const LandingPage = () => {
                         >
                             <Download className={`w-4 h-4 ${textSecondary}`} />
                             <span className={`hidden sm:inline ${textPrimary}`}>Export</span>
-                        </button>   
+                        </button>
 
                         <button
                             onClick={clearMessages}
@@ -399,16 +402,14 @@ const LandingPage = () => {
                         <div className={`${darkMode ? 'bg-slate-700' : 'bg-slate-100'} p-6 rounded-2xl mb-4`}>
                             <MapPin className={`w-12 h-12 ${textSecondary}`} />
                         </div>
-                        <p className={`${textPrimary} font-semibold text-lg`}>No messages found</p>
-                        <p className={`${textSecondary} text-sm mt-1`}>
-                            {searchTerm || filterType !== 'all' || urgencyFilter !== 'all' ? 'Try adjusting your filters' : 'Waiting for incoming data...'}
-                        </p>
+                        <p className={`${textPrimary} font-semibold text-lg`}>All cases rescued! 🎉</p>
+                        <p className={`${textSecondary} text-sm mt-1`}>Great work on saving everyone!</p>
                     </div>
                 ) : (
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
                         {filteredMessages.map((msg, index) => {
                             const msgId = `${msg.src}-${msg.msg_id}-${index}`;
-                            
+
                             if (msg.gps) {
                                 setTimeout(() => {
                                     if (!cardMapRefs.current[msgId]) {
@@ -418,7 +419,7 @@ const LandingPage = () => {
                             }
 
                             return (
-                                <div 
+                                <div
                                     key={msgId}
                                     className={`${cardBg} rounded-xl shadow-sm border overflow-hidden hover:shadow-lg transition-all duration-200`}
                                 >
@@ -441,13 +442,13 @@ const LandingPage = () => {
                                                 </span>
                                             )}
                                         </div>
-                                        
+
                                         <div className="flex flex-wrap gap-2">
                                             <span className={`inline-flex items-center px-2.5 py-1 ${darkMode ? 'bg-blue-900/30 text-blue-300 border-blue-700' : 'bg-blue-50 text-blue-700 border-blue-200'} text-xs font-semibold rounded-md border`}>
-                                                Node {msg.src} → {msg.cur}
+                                                Node {msg.source_node} → {msg.current_node}
                                             </span>
                                             <span className={`inline-flex items-center px-2.5 py-1 ${darkMode ? 'bg-purple-900/30 text-purple-300 border-purple-700' : 'bg-purple-50 text-purple-700 border-purple-200'} text-xs font-semibold rounded-md border`}>
-                                                ID: {msg.msg_id}
+                                                ID: {msg.message_id}
                                             </span>
                                             {msg.gps && (
                                                 <span className={`inline-flex items-center space-x-1 px-2.5 py-1 ${darkMode ? 'bg-cyan-900/30 text-cyan-300 border-cyan-700' : 'bg-cyan-50 text-cyan-700 border-cyan-200'} text-xs font-semibold rounded-md border`}>
@@ -484,9 +485,100 @@ const LandingPage = () => {
                                             )}
                                         </div>
                                     </div>
+                                    <div className="px-4 py-3 flex justify-end">
+                                        {!msg.rescued ? (
+                                            <button
+                                                onClick={() => useMessageStore.getState().markRescued(msg.log_id)}
+                                                className={`px-3 py-1.5 text-xs font-semibold rounded-lg border transition-all
+        ${darkMode
+                                                        ? 'bg-green-900/30 text-green-300 border-green-700 hover:bg-green-900/50'
+                                                        : 'bg-green-50 text-green-700 border-green-200 hover:bg-green-100'
+                                                    }`}
+                                            >
+                                                Mark Rescued
+                                            </button>
+                                        ) : (
+                                            <span
+                                                className={`inline-flex items-center px-3 py-1.5 text-xs font-semibold rounded-lg border
+        ${darkMode
+                                                        ? 'bg-green-900/40 text-green-400 border-green-700'
+                                                        : 'bg-green-50 text-green-700 border-green-200'
+                                                    }`}
+                                            >
+                                                ✅ Rescued
+                                            </span>
+                                        )}
+                                    </div>
+
+
                                 </div>
                             );
                         })}
+                    </div>
+                )}
+
+                {/* Rescued Messages Section */}
+                {stats.rescued > 0 && (
+                    <div className="mt-12">
+                        <div className="mb-6">
+                            <div className="flex items-center space-x-3 mb-2">
+                                <CheckCircle className={`w-6 h-6 ${darkMode ? 'text-green-400' : 'text-green-600'}`} />
+                                <h2 className={`text-2xl font-bold ${textPrimary}`}>Rescued Cases</h2>
+                                <span className={`px-4 py-1 ${darkMode ? 'bg-green-900/30 text-green-300' : 'bg-green-50 text-green-700'} rounded-full text-sm font-semibold`}>
+                                    {stats.rescued} resolved
+                                </span>
+                            </div>
+                            <p className={`${textSecondary} text-sm`}>Successfully rescued and resolved cases</p>
+                        </div>
+
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
+                            {messages.filter(m => m.rescued).map((msg, index) => {
+                                const msgId = `rescued-${msg.src}-${msg.msg_id}-${index}`;
+                                return (
+                                    <div
+                                        key={msgId}
+                                        className={`${cardBg} rounded-xl shadow-sm border overflow-hidden hover:shadow-lg transition-all duration-200 opacity-75`}
+                                    >
+                                        <div className={`p-4 border-b ${darkMode ? 'border-slate-700' : 'border-slate-200'}`}>
+                                            <div className="flex items-start justify-between mb-3">
+                                                <div className="flex-1">
+                                                    {msg.name && (
+                                                        <h3 className={`text-lg font-bold ${textPrimary} mb-1`}>
+                                                            {msg.name}
+                                                        </h3>
+                                                    )}
+                                                    <p className={`text-sm ${darkMode ? 'text-slate-300' : 'text-slate-600'} leading-relaxed`}>
+                                                        {msg.message}
+                                                    </p>
+                                                </div>
+                                                <span className={`flex items-center space-x-1 px-3 py-1.5 text-xs font-bold rounded-lg border ml-3 ${darkMode ? 'bg-green-900/40 text-green-400 border-green-700' : 'bg-green-50 text-green-700 border-green-200'}`}>
+                                                    <CheckCircle className="w-4 h-4" />
+                                                    <span>RESOLVED</span>
+                                                </span>
+                                            </div>
+
+                                            <div className="flex flex-wrap gap-2">
+                                                <span className={`inline-flex items-center px-2.5 py-1 ${darkMode ? 'bg-blue-900/30 text-blue-300 border-blue-700' : 'bg-blue-50 text-blue-700 border-blue-200'} text-xs font-semibold rounded-md border`}>
+                                                    Node {msg.source_node} → {msg.current_node}
+                                                </span>
+                                                <span className={`inline-flex items-center px-2.5 py-1 ${darkMode ? 'bg-purple-900/30 text-purple-300 border-purple-700' : 'bg-purple-50 text-purple-700 border-purple-200'} text-xs font-semibold rounded-md border`}>
+                                                    ID: {msg.message_id}
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div className={`px-4 py-3 ${darkMode ? 'bg-slate-900/50' : 'bg-slate-50'} border-t ${darkMode ? 'border-slate-700' : 'border-slate-200'}`}>
+                                            <div className="flex items-center space-x-2 text-xs">
+                                                <Clock className={`w-3.5 h-3.5 ${textSecondary}`} />
+                                                <span className={`${textSecondary} font-medium`}>
+                                                    {new Date().toLocaleTimeString()}
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
                     </div>
                 )}
 
@@ -499,15 +591,15 @@ const LandingPage = () => {
                                 <span className={`${textSecondary} font-medium text-xs sm:text-sm`}>Auto-refresh: 2s</span>
                             </div>
                             <div className="flex items-center space-x-2">
-                                <Radio className={`w-4 h-4 ${textSecondary}`} />
+                                <AlertTriangle className={`w-4 h-4 ${darkMode ? 'text-red-400' : 'text-red-600'}`} />
                                 <span className={`${textSecondary} font-medium text-xs sm:text-sm`}>
-                                    Total: <span className={`font-bold ${textPrimary}`}>{messages.length}</span>
+                                    Active: <span className={`font-bold ${textPrimary}`}>{filteredMessages.length}</span>
                                 </span>
                             </div>
                             <div className="flex items-center space-x-2">
-                                <MapPin className={`w-4 h-4 ${textSecondary}`} />
+                                <CheckCircle className={`w-4 h-4 ${darkMode ? 'text-green-400' : 'text-green-600'}`} />
                                 <span className={`${textSecondary} font-medium text-xs sm:text-sm`}>
-                                    GPS: <span className={`font-bold ${textPrimary}`}>{stats.withGPS}</span>
+                                    Resolved: <span className={`font-bold ${textPrimary}`}>{stats.rescued}</span>
                                 </span>
                             </div>
                         </div>

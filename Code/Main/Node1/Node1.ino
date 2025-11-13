@@ -159,9 +159,9 @@ void startSendLoRaMessage(String payload) {
   pendingMsg = payload;
   rebroadcastsLeft = REBROADCASTS;
   lastTxTime = 0;
-  Serial.println("[DEBUG] startSendLoRaMessage called:");
-  Serial.println("        Payload: " + payload);
-  Serial.println("        Rebroadcasts left: " + String(rebroadcastsLeft));
+  // Serial.println("[DEBUG] startSendLoRaMessage called:");
+  // Serial.println("        Payload: " + payload);
+  // Serial.println("        Rebroadcasts left: " + String(rebroadcastsLeft));
 }
 
 // Retransmission
@@ -170,8 +170,8 @@ void handleLoRaTx() {
     Radio.Send((uint8_t *)txpacket, strlen(txpacket));
     lora_idle = false;
     lastTxTime = millis();
-    Serial.println("[DEBUG] Sending message: " + String(txpacket));
-    Serial.println("        Rebroadcasts left before send: " + String(rebroadcastsLeft));
+    // Serial.println("[DEBUG] Sending message: " + String(txpacket));
+    // Serial.println("        Rebroadcasts left before send: " + String(rebroadcastsLeft));
     rebroadcastsLeft--;
   }
 }
@@ -179,13 +179,13 @@ void handleLoRaTx() {
 // Callbacks
 void OnTxDone(void) {
   lora_idle = true;
-  Serial.println("[DEBUG] Transmission done.");
+  // Serial.println("[DEBUG] Transmission done.");
   Radio.Rx(0);
 }
 
 void OnTxTimeout(void) {
   lora_idle = true;
-  Serial.println("[DEBUG] Transmission timeout.");
+  // Serial.println("[DEBUG] Transmission timeout.");
   Radio.Rx(0);
 }
 
@@ -195,9 +195,9 @@ void OnRxDone(uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr) {
   Radio.Sleep();
 
   String msg = String(rxpacket);
-  Serial.println("Recieved Something " + msg);
+  // Serial.println("Recieved Something " + msg);
   msg = decryptString(msg);
-  Serial.println("Decrypted " + msg);
+  // Serial.println("Decrypted " + msg);
   int sep = msg.indexOf(':');
   if (sep == -1) {
     Radio.Rx(0);
@@ -217,18 +217,21 @@ void OnRxDone(uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr) {
   float lon = header.substring(lonIndex + 4, header.indexOf(':', lonIndex)).toFloat();
 
   // --- Updated Serial Prints ---
-  Serial.println("[DEBUG] Received message:");
-  Serial.println("        Source: Node " + String(src));
-  Serial.println("        Current: Node " + String(cur));
-  Serial.println("        MsgID: " + String(msgId));
-  Serial.println("        GPS: " + String(lat, 6) + ", " + String(lon, 6));
-  Serial.println("        Content: " + content);
-  Serial.println("        RSSI: " + String(rssi));
   // Ignore own messages
   if (src != NODE_ID) {
     if (!seenMessage(src, msgId)) {
-      addToCache(src, msgId);
+      String jsonOutput = "{";
+      jsonOutput += "\"source_node\":" + String(src) + ",";
+      jsonOutput += "\"current_node\":" + String(cur) + ",";
+      jsonOutput += "\"message_id\":\"" + String(msgId) + "\",";
+      jsonOutput += "\"gps\":{\"latitude\":" + String(lat, 6) + ",\"longitude\":" + String(lon, 6) + "},";
+      jsonOutput += "\"sender_name\":\"Node " + String(src) + "\",";
+      jsonOutput += "\"message\":\"" + content + "\",";
+      jsonOutput += "\"rssi\":" + String(rssi);
+      jsonOutput += "}";
+      Serial.println(jsonOutput);
 
+      addToCache(src, msgId);
       inbox.push_back({ "Node " + String(src), content, true });
       showOLED("LoRa RX", "From " + String(src), content, "RSSI " + String(rssi));
       Serial.println("[DEBUG] Added message to inbox and cache.");
@@ -245,12 +248,12 @@ void OnRxDone(uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr) {
       }
 
       startSendLoRaMessage(msg);
-      Serial.println("[DEBUG] Rebroadcasting message.");
+      // Serial.println("[DEBUG] Rebroadcasting message.");
     } else {
-      Serial.println("[DEBUG] Duplicate message ignored.");
+      // Serial.println("[DEBUG] Duplicate message ignored.");
     }
   } else {
-    Serial.println("[DEBUG] Ignored own message.");
+    // Serial.println("[DEBUG] Ignored own message.");
   }
 
   Radio.Rx(0);
@@ -323,11 +326,11 @@ void setupWeb() {
     startSendLoRaMessage(payload);
     showOLED("LoRa TX", name, info);
 
-    Serial.println("[DEBUG] Web submit:");
-    Serial.println("        MsgID: " + String(id));
-    Serial.println("        Name: " + name);
-    Serial.println("        Info: " + info);
-    Serial.println("        Payload queued for sending.");
+    // Serial.println("[DEBUG] Web submit:");
+    // Serial.println("        MsgID: " + String(id));
+    // Serial.println("        Name: " + name);
+    // Serial.println("        Info: " + info);
+    // Serial.println("        Payload queued for sending.");
 
     request->send(200, "text/html", "<h3>Message sent! Redirecting...</h3><meta http-equiv='refresh' content='1; url=/' />");
   });

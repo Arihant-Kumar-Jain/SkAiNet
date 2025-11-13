@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Radio, Home, Layers, Menu, X, Signal, Sun, Moon } from 'lucide-react';
-import { useMessageStore } from '../store/useMessageStore';
+import { useMessageStore } from '../Store/useMessageStore';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);

@@ -1,8 +1,7 @@
-import { useEffect } from 'react';
 import { Routes, Route   } from "react-router-dom";  
-import Navbar from "./components/Navbar";
-import LandingPage from './pages/LandingPage';
-import ConcentrationMapPage from './pages/ConcentrationMapPage';
+import Navbar from "./Components/Navbar";
+import LandingPage from './Pages/LandingPage';
+import ConcentrationMapPage from './Pages/ConcentrationMapPage';
 
 function App() { 
    
