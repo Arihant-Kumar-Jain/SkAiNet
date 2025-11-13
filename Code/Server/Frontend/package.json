@@ -7,11 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "backend": "python ../Backend/Backend.py",
-    "dev:all": "concurrently \"npm run backend\" \"npm run dev\"",
-    "setup": "pip install -r ../Backend/requirements.txt",
-    "build:all": "npm run setup && npm run build"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.4",
