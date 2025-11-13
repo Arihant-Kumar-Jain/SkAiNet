@@ -90,10 +90,10 @@ const LandingPage = () => {
         messagesWithGPS.forEach((msg) => {
             const { latitude, longitude } = msg.gps;
 
-            let iconColor = '#3b82f6';
-            if (msg.urgency === 'HIGH') iconColor = '#ef4444';
-            else if (msg.urgency === 'MEDIUM') iconColor = '#f59e0b';
-            else if (msg.urgency === 'LOW') iconColor = '#10b981';
+            let iconColor = '#525252';
+            if (msg.urgency === 'HIGH') iconColor = '#000000';
+            else if (msg.urgency === 'MEDIUM') iconColor = '#404040';
+            else if (msg.urgency === 'LOW') iconColor = '#737373';
 
             const customIcon = L.divIcon({
                 className: 'custom-marker',
@@ -138,10 +138,10 @@ const LandingPage = () => {
             maxZoom: 19
         }).addTo(map);
 
-        let iconColor = '#3b82f6';
-        if (urgency === 'HIGH') iconColor = '#ef4444';
-        else if (urgency === 'MEDIUM') iconColor = '#f59e0b';
-        else if (urgency === 'LOW') iconColor = '#10b981';
+        let iconColor = '#525252';
+        if (urgency === 'HIGH') iconColor = '#000000';
+        else if (urgency === 'MEDIUM') iconColor = '#404040';
+        else if (urgency === 'LOW') iconColor = '#737373';
 
         const customIcon = L.divIcon({
             className: 'custom-marker',
@@ -169,7 +169,7 @@ const LandingPage = () => {
 
         const matchesUrgency = urgencyFilter === 'all' ||
             msg.urgency === urgencyFilter;
-  const notRescued = !msg.rescued; 
+        const notRescued = !msg.rescued;
         return matchesSearch && matchesFilter && matchesUrgency && notRescued;
     });
 
@@ -188,16 +188,16 @@ const LandingPage = () => {
     const getUrgencyStyles = (urgency) => {
         const baseStyles = darkMode
             ? {
-                HIGH: 'bg-red-900/30 border-red-700 text-red-300',
-                MEDIUM: 'bg-amber-900/30 border-amber-700 text-amber-300',
-                LOW: 'bg-green-900/30 border-green-700 text-green-300',
-                default: 'bg-slate-800 border-slate-700 text-slate-300'
+                HIGH: 'bg-black border-white text-white',
+                MEDIUM: 'bg-neutral-800 border-neutral-400 text-neutral-200',
+                LOW: 'bg-neutral-700 border-neutral-500 text-neutral-300',
+                default: 'bg-neutral-800 border-neutral-600 text-neutral-300'
             }
             : {
-                HIGH: 'bg-red-50 border-red-200 text-red-700',
-                MEDIUM: 'bg-amber-50 border-amber-200 text-amber-700',
-                LOW: 'bg-green-50 border-green-200 text-green-700',
-                default: 'bg-slate-50 border-slate-200 text-slate-700'
+                HIGH: 'bg-black border-black text-white',
+                MEDIUM: 'bg-neutral-700 border-neutral-700 text-white',
+                LOW: 'bg-neutral-400 border-neutral-400 text-white',
+                default: 'bg-neutral-200 border-neutral-300 text-neutral-900'
             };
         return baseStyles[urgency] || baseStyles.default;
     };
@@ -220,25 +220,25 @@ const LandingPage = () => {
         rescued: messages.filter(m => m.rescued).length
     };
 
-    const bgClass = darkMode ? 'bg-slate-900' : 'bg-slate-50';
-    const cardBg = darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-slate-200';
-    const textPrimary = darkMode ? 'text-slate-100' : 'text-slate-900';
-    const textSecondary = darkMode ? 'text-slate-400' : 'text-slate-500';
-    const inputBg = darkMode ? 'bg-slate-700 border-slate-600 text-slate-100' : 'bg-white border-slate-200 text-slate-900';
+    const bgClass = darkMode ? 'bg-black' : 'bg-white';
+    const cardBg = darkMode ? 'bg-neutral-900 border-neutral-800' : 'bg-white border-neutral-200';
+    const textPrimary = darkMode ? 'text-white' : 'text-black';
+    const textSecondary = darkMode ? 'text-neutral-400' : 'text-neutral-600';
+    const inputBg = darkMode ? 'bg-neutral-900 border-neutral-700 text-white' : 'bg-white border-neutral-300 text-black';
 
     return (
         <div className={`min-h-screen ${bgClass} transition-colors duration-200`}>
             <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
                 {/* Error Alert */}
                 {error && (
-                    <div className={`mb-6 ${darkMode ? 'bg-red-900/30 border-red-700' : 'bg-red-50 border-red-200'} border p-4 rounded-xl shadow-sm`}>
+                    <div className={`mb-6 ${darkMode ? 'bg-neutral-900 border-neutral-700' : 'bg-neutral-100 border-neutral-300'} border p-4`}>
                         <div className="flex items-center">
-                            <div className={`${darkMode ? 'bg-red-900/50' : 'bg-red-100'} p-2 rounded-lg mr-3`}>
-                                <AlertTriangle className={`w-5 h-5 ${darkMode ? 'text-red-400' : 'text-red-600'}`} />
+                            <div className={`${darkMode ? 'bg-neutral-800' : 'bg-neutral-200'} p-2 mr-3`}>
+                                <AlertTriangle className={`w-5 h-5 ${textPrimary}`} />
                             </div>
                             <div>
-                                <p className={`${darkMode ? 'text-red-300' : 'text-red-900'} font-semibold text-sm`}>Connection Error</p>
-                                <p className={`${darkMode ? 'text-red-400' : 'text-red-700'} text-sm mt-0.5`}>{error}</p>
+                                <p className={`${textPrimary} font-semibold text-sm uppercase tracking-wide`}>Connection Error</p>
+                                <p className={`${textSecondary} text-sm mt-0.5`}>{error}</p>
                             </div>
                         </div>
                     </div>
@@ -246,57 +246,57 @@ const LandingPage = () => {
 
                 {/* Statistics Cards */}
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-6">
-                    <div className={`${cardBg} rounded-xl shadow-sm border p-4 transition-colors duration-200`}>
+                    <div className={`${cardBg} border p-4 transition-colors duration-200`}>
                         <div className="flex items-center justify-between">
                             <div>
-                                <p className={`text-xs sm:text-sm ${textSecondary} font-medium`}>High Priority</p>
-                                <p className={`text-xl sm:text-2xl font-bold ${darkMode ? 'text-red-400' : 'text-red-600'} mt-1`}>{stats.high}</p>
+                                <p className={`text-xs sm:text-sm ${textSecondary} font-medium uppercase tracking-wider`}>High Priority</p>
+                                <p className={`text-xl sm:text-2xl font-bold ${textPrimary} mt-1 font-mono`}>{stats.high}</p>
                             </div>
-                            <div className={`${darkMode ? 'bg-red-900/30' : 'bg-red-50'} p-2 sm:p-3 rounded-lg`}>
-                                <AlertTriangle className={`w-5 h-5 sm:w-6 sm:h-6 ${darkMode ? 'text-red-400' : 'text-red-600'}`} />
+                            <div className={`${darkMode ? 'bg-neutral-800' : 'bg-neutral-100'} p-2 sm:p-3`}>
+                                <AlertTriangle className={`w-5 h-5 sm:w-6 sm:h-6 ${textPrimary}`} />
                             </div>
                         </div>
                     </div>
 
-                    <div className={`${cardBg} rounded-xl shadow-sm border p-4 transition-colors duration-200`}>
+                    <div className={`${cardBg} border p-4 transition-colors duration-200`}>
                         <div className="flex items-center justify-between">
                             <div>
-                                <p className={`text-xs sm:text-sm ${textSecondary} font-medium`}>Medium</p>
-                                <p className={`text-xl sm:text-2xl font-bold ${darkMode ? 'text-amber-400' : 'text-amber-600'} mt-1`}>{stats.medium}</p>
+                                <p className={`text-xs sm:text-sm ${textSecondary} font-medium uppercase tracking-wider`}>Medium</p>
+                                <p className={`text-xl sm:text-2xl font-bold ${textPrimary} mt-1 font-mono`}>{stats.medium}</p>
                             </div>
-                            <div className={`${darkMode ? 'bg-amber-900/30' : 'bg-amber-50'} p-2 sm:p-3 rounded-lg`}>
-                                <Info className={`w-5 h-5 sm:w-6 sm:h-6 ${darkMode ? 'text-amber-400' : 'text-amber-600'}`} />
+                            <div className={`${darkMode ? 'bg-neutral-800' : 'bg-neutral-100'} p-2 sm:p-3`}>
+                                <Info className={`w-5 h-5 sm:w-6 sm:h-6 ${textPrimary}`} />
                             </div>
                         </div>
                     </div>
 
-                    <div className={`${cardBg} rounded-xl shadow-sm border p-4 transition-colors duration-200`}>
+                    <div className={`${cardBg} border p-4 transition-colors duration-200`}>
                         <div className="flex items-center justify-between">
                             <div>
-                                <p className={`text-xs sm:text-sm ${textSecondary} font-medium`}>Low Priority</p>
-                                <p className={`text-xl sm:text-2xl font-bold ${darkMode ? 'text-green-400' : 'text-green-600'} mt-1`}>{stats.low}</p>
+                                <p className={`text-xs sm:text-sm ${textSecondary} font-medium uppercase tracking-wider`}>Low Priority</p>
+                                <p className={`text-xl sm:text-2xl font-bold ${textPrimary} mt-1 font-mono`}>{stats.low}</p>
                             </div>
-                            <div className={`${darkMode ? 'bg-green-900/30' : 'bg-green-50'} p-2 sm:p-3 rounded-lg`}>
-                                <CheckCircle className={`w-5 h-5 sm:w-6 sm:h-6 ${darkMode ? 'text-green-400' : 'text-green-600'}`} />
+                            <div className={`${darkMode ? 'bg-neutral-800' : 'bg-neutral-100'} p-2 sm:p-3`}>
+                                <CheckCircle className={`w-5 h-5 sm:w-6 sm:h-6 ${textPrimary}`} />
                             </div>
                         </div>
                     </div>
 
-                    <div className={`${cardBg} rounded-xl shadow-sm border p-4 transition-colors duration-200`}>
+                    <div className={`${cardBg} border p-4 transition-colors duration-200`}>
                         <div className="flex items-center justify-between">
                             <div>
-                                <p className={`text-xs sm:text-sm ${textSecondary} font-medium`}>GPS Tracked</p>
-                                <p className={`text-xl sm:text-2xl font-bold ${darkMode ? 'text-blue-400' : 'text-blue-600'} mt-1`}>{stats.withGPS}</p>
+                                <p className={`text-xs sm:text-sm ${textSecondary} font-medium uppercase tracking-wider`}>GPS Tracked</p>
+                                <p className={`text-xl sm:text-2xl font-bold ${textPrimary} mt-1 font-mono`}>{stats.withGPS}</p>
                             </div>
-                            <div className={`${darkMode ? 'bg-blue-900/30' : 'bg-blue-50'} p-2 sm:p-3 rounded-lg`}>
-                                <Navigation className={`w-5 h-5 sm:w-6 sm:h-6 ${darkMode ? 'text-blue-400' : 'text-blue-600'}`} />
+                            <div className={`${darkMode ? 'bg-neutral-800' : 'bg-neutral-100'} p-2 sm:p-3`}>
+                                <Navigation className={`w-5 h-5 sm:w-6 sm:h-6 ${textPrimary}`} />
                             </div>
                         </div>
                     </div>
                 </div>
 
                 {/* Controls Bar */}
-                <div className={`${cardBg} rounded-xl shadow-sm border p-4 mb-6 transition-colors duration-200`}>
+                <div className={`${cardBg} border p-4 mb-6 transition-colors duration-200`}>
                     <div className="flex flex-wrap items-center gap-3">
                         {/* Search */}
                         <div className="flex-1 min-w-[200px]">
@@ -304,10 +304,10 @@ const LandingPage = () => {
                                 <Search className={`absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 ${textSecondary}`} />
                                 <input
                                     type="text"
-                                    placeholder="Search messages..."
+                                    placeholder="SEARCH MESSAGES..."
                                     value={searchTerm}
                                     onChange={(e) => setSearchTerm(e.target.value)}
-                                    className={`w-full pl-10 pr-4 py-2.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm ${inputBg} transition-colors duration-200`}
+                                    className={`w-full pl-10 pr-4 py-2.5 border focus:outline-none focus:ring-1 focus:ring-neutral-500 focus:border-transparent text-sm uppercase tracking-wide ${inputBg} transition-colors duration-200`}
                                 />
                             </div>
                         </div>
@@ -316,7 +316,7 @@ const LandingPage = () => {
                         <select
                             value={filterType}
                             onChange={(e) => setFilterType(e.target.value)}
-                            className={`px-3 py-2.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 appearance-none cursor-pointer text-sm font-medium ${inputBg} transition-colors duration-200`}
+                            className={`px-3 py-2.5 border focus:outline-none focus:ring-1 focus:ring-neutral-500 appearance-none cursor-pointer text-sm font-medium uppercase tracking-wide ${inputBg} transition-colors duration-200`}
                         >
                             <option value="all">All Messages</option>
                             <option value="withName">With Name</option>
@@ -327,7 +327,7 @@ const LandingPage = () => {
                         <select
                             value={urgencyFilter}
                             onChange={(e) => setUrgencyFilter(e.target.value)}
-                            className={`px-3 py-2.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 appearance-none cursor-pointer text-sm font-medium ${inputBg} transition-colors duration-200`}
+                            className={`px-3 py-2.5 border focus:outline-none focus:ring-1 focus:ring-neutral-500 appearance-none cursor-pointer text-sm font-medium uppercase tracking-wide ${inputBg} transition-colors duration-200`}
                         >
                             <option value="all">All Urgency</option>
                             <option value="HIGH">High</option>
@@ -339,7 +339,7 @@ const LandingPage = () => {
                         <button
                             onClick={() => setShowAllMap(!showAllMap)}
                             disabled={messages.filter(m => m.gps).length === 0}
-                            className={`flex items-center space-x-2 px-4 py-2.5 ${darkMode ? 'bg-blue-900/30 border-blue-700 hover:bg-blue-900/50 text-blue-300' : 'bg-blue-50 border-blue-200 hover:bg-blue-100 text-blue-700'} border rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed text-sm font-medium`}
+                            className={`flex items-center space-x-2 px-4 py-2.5 ${darkMode ? 'bg-neutral-800 border-neutral-700 hover:bg-neutral-700' : 'bg-neutral-100 border-neutral-300 hover:bg-neutral-200'} border transition-all disabled:opacity-50 disabled:cursor-not-allowed text-sm font-medium uppercase tracking-wide ${textPrimary}`}
                         >
                             <MapIcon className="w-4 h-4" />
                             <span className="hidden sm:inline">{showAllMap ? 'Hide' : 'Show'} Map</span>
@@ -348,16 +348,16 @@ const LandingPage = () => {
                         <button
                             onClick={handleExport}
                             disabled={messages.length === 0}
-                            className={`flex items-center space-x-2 px-4 py-2.5 ${darkMode ? 'bg-slate-700 border-slate-600 hover:bg-slate-600' : 'bg-slate-50 border-slate-200 hover:bg-slate-100'} border rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed text-sm font-medium`}
+                            className={`flex items-center space-x-2 px-4 py-2.5 ${darkMode ? 'bg-neutral-800 border-neutral-700 hover:bg-neutral-700' : 'bg-neutral-100 border-neutral-300 hover:bg-neutral-200'} border transition-all disabled:opacity-50 disabled:cursor-not-allowed text-sm font-medium uppercase tracking-wide ${textPrimary}`}
                         >
-                            <Download className={`w-4 h-4 ${textSecondary}`} />
-                            <span className={`hidden sm:inline ${textPrimary}`}>Export</span>
+                            <Download className="w-4 h-4" />
+                            <span className="hidden sm:inline">Export</span>
                         </button>
 
                         <button
                             onClick={clearMessages}
                             disabled={messages.length === 0}
-                            className={`flex items-center space-x-2 px-4 py-2.5 ${darkMode ? 'bg-red-900/30 border-red-700 hover:bg-red-900/50 text-red-300' : 'bg-red-50 border-red-200 hover:bg-red-100 text-red-700'} border rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed text-sm font-medium`}
+                            className={`flex items-center space-x-2 px-4 py-2.5 ${darkMode ? 'bg-neutral-800 border-neutral-700 hover:bg-neutral-700' : 'bg-neutral-100 border-neutral-300 hover:bg-neutral-200'} border transition-all disabled:opacity-50 disabled:cursor-not-allowed text-sm font-medium uppercase tracking-wide ${textPrimary}`}
                         >
                             <Trash2 className="w-4 h-4" />
                             <span className="hidden sm:inline">Clear</span>
@@ -367,43 +367,43 @@ const LandingPage = () => {
 
                 {/* Global Map Modal */}
                 {showAllMap && (
-                    <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-                        <div className={`${cardBg} rounded-2xl shadow-2xl w-full max-w-6xl max-h-[90vh] flex flex-col transition-colors duration-200`}>
-                            <div className={`flex items-center justify-between p-4 border-b ${darkMode ? 'border-slate-700' : 'border-slate-200'}`}>
+                    <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4">
+                        <div className={`${cardBg} w-full max-w-6xl max-h-[90vh] flex flex-col transition-colors duration-200`}>
+                            <div className={`flex items-center justify-between p-4 border-b ${darkMode ? 'border-neutral-800' : 'border-neutral-200'}`}>
                                 <div className="flex items-center space-x-3">
-                                    <MapIcon className={`w-6 h-6 ${darkMode ? 'text-blue-400' : 'text-blue-600'}`} />
-                                    <h2 className={`text-xl font-bold ${textPrimary}`}>All Locations Map</h2>
-                                    <span className={`px-3 py-1 ${darkMode ? 'bg-blue-900/30 text-blue-300' : 'bg-blue-50 text-blue-700'} rounded-full text-sm font-semibold`}>
+                                    <MapIcon className={`w-6 h-6 ${textPrimary}`} />
+                                    <h2 className={`text-xl font-bold uppercase tracking-wide ${textPrimary}`}>All Locations Map</h2>
+                                    <span className={`px-3 py-1 ${darkMode ? 'bg-neutral-800 border-neutral-700' : 'bg-neutral-100 border-neutral-300'} border text-sm font-semibold font-mono ${textPrimary}`}>
                                         {filteredMessages.filter(m => m.gps).length} locations
                                     </span>
                                 </div>
                                 <button
                                     onClick={() => setShowAllMap(false)}
-                                    className={`p-2 rounded-lg ${darkMode ? 'hover:bg-slate-700' : 'hover:bg-slate-100'} transition-colors`}
+                                    className={`p-2 ${darkMode ? 'hover:bg-neutral-800' : 'hover:bg-neutral-100'} transition-colors`}
                                 >
                                     <X className={`w-5 h-5 ${textSecondary}`} />
                                 </button>
                             </div>
-                            <div id="global-map" className="flex-1 rounded-b-2xl"></div>
+                            <div id="global-map" className="flex-1"></div>
                         </div>
                     </div>
                 )}
 
                 {/* Messages Grid */}
                 {isFetchingMessages && messages.length === 0 ? (
-                    <div className={`${cardBg} rounded-xl shadow-sm border p-16 flex flex-col items-center justify-center transition-colors duration-200`}>
+                    <div className={`${cardBg} border p-16 flex flex-col items-center justify-center transition-colors duration-200`}>
                         <div className="relative">
-                            <div className={`w-16 h-16 border-4 ${darkMode ? 'border-slate-700 border-t-blue-500' : 'border-slate-200 border-t-blue-600'} rounded-full animate-spin`}></div>
+                            <div className={`w-16 h-16 border-4 ${darkMode ? 'border-neutral-800 border-t-white' : 'border-neutral-200 border-t-black'} rounded-full animate-spin`}></div>
                         </div>
-                        <p className={`${textSecondary} font-medium mt-4`}>Connecting to network...</p>
+                        <p className={`${textSecondary} font-medium mt-4 uppercase tracking-wide`}>Connecting to network...</p>
                     </div>
                 ) : filteredMessages.length === 0 ? (
-                    <div className={`${cardBg} rounded-xl shadow-sm border p-16 flex flex-col items-center justify-center transition-colors duration-200`}>
-                        <div className={`${darkMode ? 'bg-slate-700' : 'bg-slate-100'} p-6 rounded-2xl mb-4`}>
+                    <div className={`${cardBg} border p-16 flex flex-col items-center justify-center transition-colors duration-200`}>
+                        <div className={`${darkMode ? 'bg-neutral-800' : 'bg-neutral-100'} p-6 mb-4`}>
                             <MapPin className={`w-12 h-12 ${textSecondary}`} />
                         </div>
-                        <p className={`${textPrimary} font-semibold text-lg`}>All cases rescued! 🎉</p>
-                        <p className={`${textSecondary} text-sm mt-1`}>Great work on saving everyone!</p>
+                        <p className={`${textPrimary} font-semibold text-lg uppercase tracking-wide`}>All Cases Resolved</p>
+                        <p className={`${textSecondary} text-sm mt-1 uppercase tracking-wide`}>No Active Cases</p>
                     </div>
                 ) : (
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
@@ -421,22 +421,22 @@ const LandingPage = () => {
                             return (
                                 <div
                                     key={msgId}
-                                    className={`${cardBg} rounded-xl shadow-sm border overflow-hidden hover:shadow-lg transition-all duration-200`}
+                                    className={`${cardBg} border overflow-hidden hover:shadow-2xl transition-all duration-200`}
                                 >
-                                    <div className={`p-4 border-b ${darkMode ? 'border-slate-700' : 'border-slate-200'}`}>
+                                    <div className={`p-4 border-b ${darkMode ? 'border-neutral-800' : 'border-neutral-200'}`}>
                                         <div className="flex items-start justify-between mb-3">
                                             <div className="flex-1">
                                                 {msg.name && (
-                                                    <h3 className={`text-lg font-bold ${textPrimary} mb-1`}>
+                                                    <h3 className={`text-lg font-bold ${textPrimary} mb-1 uppercase tracking-wide`}>
                                                         {msg.name}
                                                     </h3>
                                                 )}
-                                                <p className={`text-sm ${darkMode ? 'text-slate-300' : 'text-slate-600'} leading-relaxed`}>
+                                                <p className={`text-sm ${textPrimary} leading-relaxed`}>
                                                     {msg.message}
                                                 </p>
                                             </div>
                                             {msg.urgency && (
-                                                <span className={`flex items-center space-x-1 px-3 py-1.5 text-xs font-bold rounded-lg border ml-3 ${getUrgencyStyles(msg.urgency)}`}>
+                                                <span className={`flex items-center space-x-1 px-3 py-1.5 text-xs font-bold border ml-3 ${getUrgencyStyles(msg.urgency)} uppercase tracking-wider`}>
                                                     {getUrgencyIcon(msg.urgency)}
                                                     <span>{msg.urgency}</span>
                                                 </span>
@@ -444,14 +444,14 @@ const LandingPage = () => {
                                         </div>
 
                                         <div className="flex flex-wrap gap-2">
-                                            <span className={`inline-flex items-center px-2.5 py-1 ${darkMode ? 'bg-blue-900/30 text-blue-300 border-blue-700' : 'bg-blue-50 text-blue-700 border-blue-200'} text-xs font-semibold rounded-md border`}>
-                                                Node {msg.source_node} → {msg.current_node}
+                                            <span className={`inline-flex items-center px-2.5 py-1 ${darkMode ? 'bg-neutral-800 border-neutral-700' : 'bg-neutral-100 border-neutral-300'} text-xs font-semibold border font-mono ${textPrimary}`}>
+                                                NODE {msg.source_node} → {msg.current_node}
                                             </span>
-                                            <span className={`inline-flex items-center px-2.5 py-1 ${darkMode ? 'bg-purple-900/30 text-purple-300 border-purple-700' : 'bg-purple-50 text-purple-700 border-purple-200'} text-xs font-semibold rounded-md border`}>
+                                            <span className={`inline-flex items-center px-2.5 py-1 ${darkMode ? 'bg-neutral-800 border-neutral-700' : 'bg-neutral-100 border-neutral-300'} text-xs font-semibold border font-mono ${textPrimary}`}>
                                                 ID: {msg.message_id}
                                             </span>
                                             {msg.gps && (
-                                                <span className={`inline-flex items-center space-x-1 px-2.5 py-1 ${darkMode ? 'bg-cyan-900/30 text-cyan-300 border-cyan-700' : 'bg-cyan-50 text-cyan-700 border-cyan-200'} text-xs font-semibold rounded-md border`}>
+                                                <span className={`inline-flex items-center space-x-1 px-2.5 py-1 ${darkMode ? 'bg-neutral-800 border-neutral-700' : 'bg-neutral-100 border-neutral-300'} text-xs font-semibold border ${textPrimary}`}>
                                                     <MapPin className="w-3 h-3" />
                                                     <span>GPS</span>
                                                 </span>
@@ -462,7 +462,7 @@ const LandingPage = () => {
                                     {msg.gps && (
                                         <div className="relative">
                                             <div id={`map-${msgId}`} className="h-48 w-full"></div>
-                                            <div className={`absolute bottom-3 left-3 right-3 ${darkMode ? 'bg-slate-900/90' : 'bg-white/90'} backdrop-blur-sm px-3 py-2 rounded-lg border ${darkMode ? 'border-slate-700' : 'border-slate-200'} shadow-lg`}>
+                                            <div className={`absolute bottom-3 left-3 right-3 ${darkMode ? 'bg-black/90 border-neutral-700' : 'bg-white/90 border-neutral-300'} px-3 py-2 border`}>
                                                 <p className={`text-xs font-mono ${textSecondary}`}>
                                                     {msg.gps.latitude.toFixed(6)}, {msg.gps.longitude.toFixed(6)}
                                                 </p>
@@ -470,16 +470,16 @@ const LandingPage = () => {
                                         </div>
                                     )}
 
-                                    <div className={`px-4 py-3 ${darkMode ? 'bg-slate-900/50' : 'bg-slate-50'} border-t ${darkMode ? 'border-slate-700' : 'border-slate-200'}`}>
+                                    <div className={`px-4 py-3 ${darkMode ? 'bg-neutral-900/50 border-neutral-800' : 'bg-neutral-50 border-neutral-200'} border-t`}>
                                         <div className="flex items-center justify-between text-xs">
                                             <div className="flex items-center space-x-2">
                                                 <Clock className={`w-3.5 h-3.5 ${textSecondary}`} />
-                                                <span className={`${textSecondary} font-medium`}>
+                                                <span className={`${textSecondary} font-medium font-mono`}>
                                                     {new Date().toLocaleTimeString()}
                                                 </span>
                                             </div>
                                             {!msg.gps && (
-                                                <span className={`px-2 py-1 ${darkMode ? 'bg-slate-700 text-slate-400' : 'bg-slate-200 text-slate-600'} rounded text-xs font-medium`}>
+                                                <span className={`px-2 py-1 ${darkMode ? 'bg-neutral-800 border-neutral-700' : 'bg-neutral-200 border-neutral-300'} border text-xs font-medium uppercase tracking-wide ${textPrimary}`}>
                                                     No GPS Data
                                                 </span>
                                             )}
@@ -489,28 +489,26 @@ const LandingPage = () => {
                                         {!msg.rescued ? (
                                             <button
                                                 onClick={() => useMessageStore.getState().markRescued(msg.log_id)}
-                                                className={`px-3 py-1.5 text-xs font-semibold rounded-lg border transition-all
+                                                className={`px-3 py-1.5 text-xs font-semibold border transition-all uppercase tracking-wider
         ${darkMode
-                                                        ? 'bg-green-900/30 text-green-300 border-green-700 hover:bg-green-900/50'
-                                                        : 'bg-green-50 text-green-700 border-green-200 hover:bg-green-100'
+                                                        ? 'bg-neutral-800 border-neutral-700 hover:bg-neutral-700 text-white'
+                                                        : 'bg-neutral-900 border-neutral-900 hover:bg-black text-white'
                                                     }`}
                                             >
                                                 Mark Rescued
                                             </button>
                                         ) : (
                                             <span
-                                                className={`inline-flex items-center px-3 py-1.5 text-xs font-semibold rounded-lg border
+                                                className={`inline-flex items-center px-3 py-1.5 text-xs font-semibold border uppercase tracking-wider
         ${darkMode
-                                                        ? 'bg-green-900/40 text-green-400 border-green-700'
-                                                        : 'bg-green-50 text-green-700 border-green-200'
+                                                        ? 'bg-neutral-800 border-neutral-700 text-neutral-300'
+                                                        : 'bg-neutral-100 border-neutral-300 text-neutral-700'
                                                     }`}
                                             >
-                                                ✅ Rescued
+                                                Rescued
                                             </span>
                                         )}
                                     </div>
-
-
                                 </div>
                             );
                         })}
@@ -522,92 +520,72 @@ const LandingPage = () => {
                     <div className="mt-12">
                         <div className="mb-6">
                             <div className="flex items-center space-x-3 mb-2">
-                                <CheckCircle className={`w-6 h-6 ${darkMode ? 'text-green-400' : 'text-green-600'}`} />
-                                <h2 className={`text-2xl font-bold ${textPrimary}`}>Rescued Cases</h2>
-                                <span className={`px-4 py-1 ${darkMode ? 'bg-green-900/30 text-green-300' : 'bg-green-50 text-green-700'} rounded-full text-sm font-semibold`}>
+                                <CheckCircle className={`w-6 h-6 ${textPrimary}`} />
+                                <h2 className={`text-2xl font-bold uppercase tracking-wide ${textPrimary}`}>Rescued Cases</h2>
+                                <span className={`px-4 py-1 ${darkMode ? 'bg-neutral-800 border-neutral-700' : 'bg-neutral-100 border-neutral-300'} border text-sm font-semibold font-mono ${textPrimary}`}>
                                     {stats.rescued} resolved
                                 </span>
                             </div>
-                            <p className={`${textSecondary} text-sm`}>Successfully rescued and resolved cases</p>
+                            <p className={`${textSecondary} text-sm uppercase tracking-wide`}>Successfully rescued and resolved cases</p>
                         </div>
-
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
-                            {messages.filter(m => m.rescued).map((msg, index) => {
-                                const msgId = `rescued-${msg.src}-${msg.msg_id}-${index}`;
-                                return (
-                                    <div
-                                        key={msgId}
-                                        className={`${cardBg} rounded-xl shadow-sm border overflow-hidden hover:shadow-lg transition-all duration-200 opacity-75`}
-                                    >
-                                        <div className={`p-4 border-b ${darkMode ? 'border-slate-700' : 'border-slate-200'}`}>
-                                            <div className="flex items-start justify-between mb-3">
-                                                <div className="flex-1">
-                                                    {msg.name && (
-                                                        <h3 className={`text-lg font-bold ${textPrimary} mb-1`}>
-                                                            {msg.name}
-                                                        </h3>
-                                                    )}
-                                                    <p className={`text-sm ${darkMode ? 'text-slate-300' : 'text-slate-600'} leading-relaxed`}>
-                                                        {msg.message}
-                                                    </p>
+                            {messages
+                                .filter(msg => msg.rescued)
+                                .map((msg, index) => {
+                                    const msgId = `${msg.src}-${msg.msg_id}-rescued-${index}`;
+
+                                    return (
+                                        <div
+                                            key={msgId}
+                                            className={`${cardBg} border opacity-70 hover:opacity-100 transition-all duration-200`}
+                                        >
+                                            <div className="p-4">
+                                                <div className="flex items-start justify-between mb-3">
+                                                    <div className="flex-1">
+                                                        {msg.name && (
+                                                            <h3 className={`text-lg font-bold ${textPrimary} mb-1 uppercase tracking-wide line-through`}>
+                                                                {msg.name}
+                                                            </h3>
+                                                        )}
+                                                        <p className={`text-sm ${textPrimary} leading-relaxed line-through`}>
+                                                            {msg.message}
+                                                        </p>
+                                                    </div>
+                                                    <span className={`flex items-center space-x-1 px-3 py-1.5 text-xs font-bold border ml-3 ${darkMode ? 'bg-green-900 border-green-700 text-green-300' : 'bg-green-100 border-green-300 text-green-800'} uppercase tracking-wider`}>
+                                                        <CheckCircle className="w-4 h-4" />
+                                                        <span>RESCUED</span>
+                                                    </span>
                                                 </div>
-                                                <span className={`flex items-center space-x-1 px-3 py-1.5 text-xs font-bold rounded-lg border ml-3 ${darkMode ? 'bg-green-900/40 text-green-400 border-green-700' : 'bg-green-50 text-green-700 border-green-200'}`}>
-                                                    <CheckCircle className="w-4 h-4" />
-                                                    <span>RESOLVED</span>
-                                                </span>
+
+                                                <div className="flex flex-wrap gap-2">
+                                                    <span className={`inline-flex items-center px-2.5 py-1 ${darkMode ? 'bg-neutral-800 border-neutral-700' : 'bg-neutral-100 border-neutral-300'} text-xs font-semibold border font-mono ${textPrimary}`}>
+                                                        NODE {msg.source_node} → {msg.current_node}
+                                                    </span>
+                                                    <span className={`inline-flex items-center px-2.5 py-1 ${darkMode ? 'bg-neutral-800 border-neutral-700' : 'bg-neutral-100 border-neutral-300'} text-xs font-semibold border font-mono ${textPrimary}`}>
+                                                        ID: {msg.message_id}
+                                                    </span>
+                                                </div>
                                             </div>
 
-                                            <div className="flex flex-wrap gap-2">
-                                                <span className={`inline-flex items-center px-2.5 py-1 ${darkMode ? 'bg-blue-900/30 text-blue-300 border-blue-700' : 'bg-blue-50 text-blue-700 border-blue-200'} text-xs font-semibold rounded-md border`}>
-                                                    Node {msg.source_node} → {msg.current_node}
-                                                </span>
-                                                <span className={`inline-flex items-center px-2.5 py-1 ${darkMode ? 'bg-purple-900/30 text-purple-300 border-purple-700' : 'bg-purple-50 text-purple-700 border-purple-200'} text-xs font-semibold rounded-md border`}>
-                                                    ID: {msg.message_id}
-                                                </span>
+                                            <div className={`px-4 py-3 ${darkMode ? 'bg-green-900/20 border-green-800' : 'bg-green-50 border-green-200'} border-t`}>
+                                                <div className="flex items-center justify-between text-xs">
+                                                    <div className="flex items-center space-x-2">
+                                                        <Clock className={`w-3.5 h-3.5 ${textSecondary}`} />
+                                                        <span className={`${textSecondary} font-medium font-mono`}>
+                                                            {new Date().toLocaleTimeString()}
+                                                        </span>
+                                                    </div>
+                                                    <span className={`px-2 py-1 ${darkMode ? 'bg-green-900 border-green-700' : 'bg-green-100 border-green-300'} border text-xs font-medium text-green-800 uppercase tracking-wide`}>
+                                                        Case Resolved
+                                                    </span>
+                                                </div>
                                             </div>
                                         </div>
-
-                                        <div className={`px-4 py-3 ${darkMode ? 'bg-slate-900/50' : 'bg-slate-50'} border-t ${darkMode ? 'border-slate-700' : 'border-slate-200'}`}>
-                                            <div className="flex items-center space-x-2 text-xs">
-                                                <Clock className={`w-3.5 h-3.5 ${textSecondary}`} />
-                                                <span className={`${textSecondary} font-medium`}>
-                                                    {new Date().toLocaleTimeString()}
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                );
-                            })}
+                                    );
+                                })}
                         </div>
                     </div>
                 )}
-
-                {/* Footer Info */}
-                <div className={`mt-6 ${cardBg} rounded-xl shadow-sm border p-4 transition-colors duration-200`}>
-                    <div className="flex items-center justify-between text-sm flex-wrap gap-4">
-                        <div className="flex items-center space-x-4 sm:space-x-6">
-                            <div className="flex items-center space-x-2">
-                                <Clock className={`w-4 h-4 ${textSecondary}`} />
-                                <span className={`${textSecondary} font-medium text-xs sm:text-sm`}>Auto-refresh: 2s</span>
-                            </div>
-                            <div className="flex items-center space-x-2">
-                                <AlertTriangle className={`w-4 h-4 ${darkMode ? 'text-red-400' : 'text-red-600'}`} />
-                                <span className={`${textSecondary} font-medium text-xs sm:text-sm`}>
-                                    Active: <span className={`font-bold ${textPrimary}`}>{filteredMessages.length}</span>
-                                </span>
-                            </div>
-                            <div className="flex items-center space-x-2">
-                                <CheckCircle className={`w-4 h-4 ${darkMode ? 'text-green-400' : 'text-green-600'}`} />
-                                <span className={`${textSecondary} font-medium text-xs sm:text-sm`}>
-                                    Resolved: <span className={`font-bold ${textPrimary}`}>{stats.rescued}</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div className={`${textSecondary} text-xs font-mono`}>
-                            Last update: {new Date().toLocaleTimeString()}
-                        </div>
-                    </div>
-                </div>
             </main>
         </div>
     );
